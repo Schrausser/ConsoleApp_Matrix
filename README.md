@@ -72,4 +72,115 @@ Multipliziert eine Matrix mit einer reellen Zahl.
 - Übernahme einer ASCII Matrixdatei. 
 - Ausgabe einer ASCII Matrixdatei.
   
-  
+## ENT
+
+Führt eine symmetrische entwobene Aufteilung einer Datenvektordatei x0 durch.
+
+- Übernahme einer einspaltigen ASCII Datei. 
+- Ausgabe von 2 einspaltigen ASCII Dateien.
+
+## KTF
+
+Verringert oder vergrössert den Umfang eines perfekt linearen Datenvektors. Die bis n' iterative Datenanpassung erfolgt über 
+	
+	xi[n]= xi[n+1](n/(n-1)) bei n'< n,
+	xi[n]= xi[n-1]((n-2)/(n-1)) bei n' > n.
+
+- Übernahme einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang n. 
+- Ausgabe einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang n'. 
+
+## KTF2
+
+Verringert oder vergrössert den Umfang eines Datenvektors (n_max= n'_max= 33000). 
+
+- Übernahme einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang n. 
+- Ausgabe einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang n'.
+
+## KTF3
+
+Passt einen Datenvektor an ein Ziel-Koordinatensystem an. 
+Die Datenanpassung erfolgt über
+	
+ 	x'[i] = minx+(((minx-x[min])-(minx-x[i]))*((maxx-minx)/((minx-x[min])-(minx-x[max])))),
+
+bei einer Wertinvertierung errechnet man x''[i] über
+	
+	x''[i] = (minx+maxx) - x'[i],
+
+wobei
+
+minx .... Wert des Minimalpunktes im Ziel-Koordinatensystem
+maxx .... Wert des Maximalpunktes im Ziel-Koordinatensystem
+x[min] .. Vektor Minimalwert
+x[max] .. Vektor Maximalwert   
+
+- Übernahme einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei. 
+- Ausgabe einer zweispaltigen, aufsteigend geordneten ASCII Datenmatrixdatei beinhaltend:
+
+(1) Den an das Ziel-Koordinatensystem angepassten Datenvektor. 
+(2) Den ursprünglichen Datenvektor. 
+
+## NTF
+
+Erzeugt einen aufsteigend geordneten linearen Datenvektor und passt diesen an ein Ziel-Koordinatensystem an. 
+Die Datenanpassung erfolgt über
+	
+ 	x'[i] = minx+(((minx-x[min])-(minx-x[i]))*((maxx-minx)/((minx-x[min])-(minx-x[max])))),
+
+bei einer Wertinvertierung errechnet man x''[i] über
+	
+	x''[i] = (minx+maxx) - x'[i],
+
+wobei
+
+minx .... Wert des Minimalpunktes im Ziel-Koordinatensystem
+maxx .... Wert des Maximalpunktes im Ziel-Koordinatensystem
+x[min] .. Vektor Minimalwert
+x[max] .. Vektor Maximalwert   
+
+ - Ausgabe einer einspaltigen, aufsteigend geordneten linearen ASCII Datenvektordatei.
+
+## SEL
+
+Selegiert einen Datenvektor aus einer Datenmatrix (n_max= 33000). 
+
+- Übernahme einer ASCII Datenmatrixdatei. 
+- Ausgabe einer einspaltigen ASCII Datenvektordatei. 
+
+## SRT
+
+Sortiert einen Datenvektor (n_max= 33000, 16 stellige Ausgabe). 
+
+- Übernahme einer einspaltigen ASCII Datenvektordatei. 
+- Ausgabe einer sortierten einspaltigen ASCII Datenvektordatei. 
+
+## SRT2
+
+Sortiert einen Datenvektor (n_max= 33000). 
+Die Datensortierung erfolgt über iterativen Paarvergleich (i vs. i+1) und Paartausch (i > i+1).
+(langsamer als SRT.EXE) 
+
+- Übernahme einer einspaltigen ASCII Datenvektordatei. 
+- Ausgabe einer sortierten einspaltigen ASCII Datenvektordatei. 
+
+## SRT3
+
+Sortiert einen Datenvektor (n_max= 33000, max 8-Stellen). 
+Sehr schnelle Berechnung durch Umsetzung der C-eigenen 'Qsort' Funktion.
+
+- Übernahme einer einspaltigen ASCII Datenvektordatei. 
+- Ausgabe einer sortierten einspaltigen ASCII Datenvektordatei. 
+
+## V2V
+
+Fügt 2 einspaltige ASCII Dateien aneinander (n1=n2 wird vorausgesetzt).
+
+- Übernahme von 2 einspaltigen ASCII Dateien. 
+- Ausgabe einer zweispaltigen ASCII Datei.
+
+## Z2Z
+
+Fügt zwei ASCII Dateien aneinander.
+
+- Übernahme zweier ASCII Dateien. 
+- Ausgabe einer ASCII Datei.
