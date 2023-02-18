@@ -3,17 +3,24 @@ Console applications for matrix calculation and tools (German):
 
 ## AMA
 
-Addiert oder subtrahiert 2 Matrizen (k1=k2, n1=n2 wird vorausgesetzt).
+Addiert oder subtrahiert 2 Matrizen
+
+     k1=k2, n1=n2 
+
+wird vorausgesetzt.
 
 - Übernahme 2er ASCII Matrixdateien. 
 - Ausgabe einer ASCII Matrixdatei.
   
 ## IMA
 
-Berechnet die inverse A-1 von A über die verkettete Form 
-des Gaussschen Algorithmus (k_max=n_max= 200,a11<>0).
+Berechnet die inverse 1/A von A über die verkettete Form 
+des Gaussschen Algorithmus 
+
+     k_max=n_max= 200,a11<>0.
+
 Es resultieren 2 Dreiecksmatrizen B und C, sowie die Matrix T 
-zur erzeugten Einheitsmatrix E, A-1 entsteht transponiert. 
+zur erzeugten Einheitsmatrix E, 1/A entsteht transponiert. 
 
 - Übernahme einer quadratischen ASCII Matrixdatei. 
 - Ausgabe einer quadratischen ASCII Matrixdatei.
@@ -21,7 +28,9 @@ zur erzeugten Einheitsmatrix E, A-1 entsteht transponiert.
 ## MMA
 
 Multipliziert 2 Matrizen (k1=n2 wird vorausgesetzt).
-Es resultiert eine Matrix mit n=n1 und k=k2.    
+Es resultiert eine Matrix mit 
+
+     n=n1 und k=k2.    
 
 - Übernahme 2er ASCII Matrixdateien. 
 - Ausgabe einer ASCII Matrixdatei.
@@ -49,7 +58,10 @@ Berechnet die Spur (sp) einer quadratischen Matrix A.
 
 ## TRP
 
-Transponiert eine Datenmatrix (n_max= k_max= 1299). 
+Transponiert eine Datenmatrix 
+
+     n_max= k_max= 1299. 
+
 Spaltentrennzeichen, Eingabedatei: Tabulator oder Leerzeichen.
 Spaltentrennzeichen, Ausgabedatei: 1 Leerzeichen.
 
@@ -59,7 +71,10 @@ Spaltentrennzeichen, Ausgabedatei: 1 Leerzeichen.
 ## VMA
 
 Berechnet die verkettete Form des Gaussschen Algorithmus 
-einer quadratischen Matrix A (k_max=n_max= 250,a11<>0).
+einer quadratischen Matrix A 
+
+     k_max=n_max= 250,a11<>0.
+
 Es resultieren 2 Dreiecksmatrizen B und C. Die Determinante von A (det A) ist das Produkt der Elemente in der Hauptdiagonale von B (TT bii).
 
 - Übernahme einer quadratischen ASCII Matrixdatei. 
@@ -101,63 +116,75 @@ Verringert oder vergrössert den Umfang eines Datenvektors (n_max= n'_max= 33000
 Passt einen Datenvektor an ein Ziel-Koordinatensystem an. 
 Die Datenanpassung erfolgt über
 	
- 	x'[i] = minx+(((minx-x[min])-(minx-x[i]))*((maxx-minx)/((minx-x[min])-(minx-x[max])))),
+      x'[i] = minx+(((minx-x[min])-(minx-x[i]))*((maxx-minx)/((minx-x[min])-(minx-x[max])))),
 
 bei einer Wertinvertierung errechnet man x''[i] über
 	
-	x''[i] = (minx+maxx) - x'[i],
+      x''[i] = (minx+maxx) - x'[i],
+mit
 
-wobei
-
-minx .... Wert des Minimalpunktes im Ziel-Koordinatensystem
-maxx .... Wert des Maximalpunktes im Ziel-Koordinatensystem
-x[min] .. Vektor Minimalwert
-x[max] .. Vektor Maximalwert   
+      minx  ... Wert des Minimalpunktes im Ziel-Koordinatensystem
+      maxx .... Wert des Maximalpunktes im Ziel-Koordinatensystem
+      x[min] .. Vektor Minimalwert
+      x[max] .. Vektor Maximalwert   
 
 - Übernahme einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei. 
 - Ausgabe einer zweispaltigen, aufsteigend geordneten ASCII Datenmatrixdatei beinhaltend:
 
-(1) Den an das Ziel-Koordinatensystem angepassten Datenvektor. 
-(2) Den ursprünglichen Datenvektor. 
+      Den an das Ziel-Koordinatensystem angepassten Datenvektor. 
+      Den ursprünglichen Datenvektor. 
 
 ## NTF
 
 Erzeugt einen aufsteigend geordneten linearen Datenvektor und passt diesen an ein Ziel-Koordinatensystem an. 
 Die Datenanpassung erfolgt über
 	
- 	x'[i] = minx+(((minx-x[min])-(minx-x[i]))*((maxx-minx)/((minx-x[min])-(minx-x[max])))),
+     x'[i] = minx+(((minx-x[min])-(minx-x[i]))*((maxx-minx)/((minx-x[min])-(minx-x[max])))),
 
 bei einer Wertinvertierung errechnet man x''[i] über
 	
-	x''[i] = (minx+maxx) - x'[i],
+     x''[i] = (minx+maxx) - x'[i],
+mit
 
-wobei
-
-minx .... Wert des Minimalpunktes im Ziel-Koordinatensystem
-maxx .... Wert des Maximalpunktes im Ziel-Koordinatensystem
-x[min] .. Vektor Minimalwert
-x[max] .. Vektor Maximalwert   
+     minx .... Wert des Minimalpunktes im Ziel-Koordinatensystem
+     maxx .... Wert des Maximalpunktes im Ziel-Koordinatensystem
+     x[min] .. Vektor Minimalwert
+     x[max] .. Vektor Maximalwert   
 
  - Ausgabe einer einspaltigen, aufsteigend geordneten linearen ASCII Datenvektordatei.
 
 ## SEL
 
-Selegiert einen Datenvektor aus einer Datenmatrix (n_max= 33000). 
+Selegiert einen Datenvektor aus einer Datenmatrix 
+
+     n_max= 33000. 
 
 - Übernahme einer ASCII Datenmatrixdatei. 
 - Ausgabe einer einspaltigen ASCII Datenvektordatei. 
 
 ## SRT
 
-Sortiert einen Datenvektor (n_max= 33000, 16 stellige Ausgabe). 
+Sortiert einen Datenvektor
+
+     n_max= 33000, 16 stellige Ausgabe. 
 
 - Übernahme einer einspaltigen ASCII Datenvektordatei. 
 - Ausgabe einer sortierten einspaltigen ASCII Datenvektordatei. 
 
 ## SRT2
 
-Sortiert einen Datenvektor (n_max= 33000). 
-Die Datensortierung erfolgt über iterativen Paarvergleich (i vs. i+1) und Paartausch (i > i+1).
+Sortiert einen Datenvektor
+    
+     n_max= 33000.
+
+Die Datensortierung erfolgt über iterativen Paarvergleich 
+    
+     (i vs. i+1) 
+
+und Paartausch 
+
+     (i > i+1).
+
 (langsamer als SRT.EXE) 
 
 - Übernahme einer einspaltigen ASCII Datenvektordatei. 
@@ -165,7 +192,10 @@ Die Datensortierung erfolgt über iterativen Paarvergleich (i vs. i+1) und Paart
 
 ## SRT3
 
-Sortiert einen Datenvektor (n_max= 33000, max 8-Stellen). 
+Sortiert einen Datenvektor
+
+     n_max= 33000, max 8-Stellen. 
+
 Sehr schnelle Berechnung durch Umsetzung der C-eigenen 'Qsort' Funktion.
 
 - Übernahme einer einspaltigen ASCII Datenvektordatei. 
