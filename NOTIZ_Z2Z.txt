@@ -1,0 +1,22 @@
+Z2Z by Dietmar SCHRAUSSER 2010
+
+Allgemein
+---------
+Z2Z.EXE fügt zwei ASCII Dateien aneinander.
+
+Arbeitsweise
+------------
+1# Übernahme zweier ASCII Dateien. 
+
+2# Ausgabe einer ASCII Datei.
+  
+Handhabung
+----------
+Z2Z [input1] [input2] [output] 
+[input1] ... Eingabe Datei 1
+[input2] ... Eingabe Datei 2
+[output] ... Ausgabe Datei 
+
+bsp: Z2Z in1.txt in2.txt out.txt 
+     
+     

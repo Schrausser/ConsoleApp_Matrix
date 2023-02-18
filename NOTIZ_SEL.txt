@@ -1,0 +1,24 @@
+SEL by Dietmar SCHRAUSSER 2009
+
+Allgemein
+---------
+SEL.EXE selegiert einen Datenvektor aus einer Datenmatrix (n_max= 33000). 
+
+Arbeitsweise
+------------
+1# Übernahme einer ASCII Datenmatrixdatei. 
+
+2# Ausgabe einer einspaltigen ASCII Datenvektordatei. 
+
+Handhabung
+----------
+SEL [input] [output] [a] [k] 
+[input] ... Eingabe Datei 
+[output] .. Ausgabe Datei 
+[a] ....... Vektornummer 
+[k] ....... Vektoranzahl 
+
+bsp: SEL in.txt out.asc 3 5
+
+
+

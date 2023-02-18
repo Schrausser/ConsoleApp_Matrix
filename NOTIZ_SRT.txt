@@ -1,0 +1,23 @@
+SRT by Dietmar SCHRAUSSER 2009,2010
+
+Allgemein
+---------
+SRT.EXE sortiert einen Datenvektor (n_max= 33000, 16 stellige Ausgabe). 
+
+Arbeitsweise
+------------
+1# Übernahme einer einspaltigen ASCII Datenvektordatei. 
+
+2# Ausgabe einer sortierten einspaltigen ASCII Datenvektordatei. 
+
+Handhabung
+----------
+SRT [input] [output] [[d]] 
+[input] ... Eingabe Datei 
+[output] .. Ausgabe Datei 
+[d] ....... optional 1: absteigende Sortierung 
+
+bsp: SRT in.txt out.txt 
+     SRT in.txt out.txt 1
+
+

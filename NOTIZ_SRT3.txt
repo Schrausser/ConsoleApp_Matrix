@@ -1,0 +1,24 @@
+SRT3 by Dietmar SCHRAUSSER 2009
+
+Allgemein
+---------
+SRT3.EXE sortiert einen Datenvektor (n_max= 33000, max 8-Stellen). 
+Sehr schnelle Berechnung durch Umsetzung der C-eigenen 'Qsort' Funktion.
+ 
+Arbeitsweise
+------------
+1# Übernahme einer einspaltigen ASCII Datenvektordatei. 
+
+2# Ausgabe einer sortierten einspaltigen ASCII Datenvektordatei. 
+
+Handhabung
+----------
+SRT3 [input] [output] [[d]] 
+[input] ... Eingabe Datei 
+[output] .. Ausgabe Datei 
+[d] ....... optional 1: absteigende Sortierung 
+
+bsp: SRT3 in.txt out.txt 
+     SRT3 in.txt out.txt 1
+
+

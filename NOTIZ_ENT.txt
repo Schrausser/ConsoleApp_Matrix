@@ -1,0 +1,36 @@
+ENT by Dietmar SCHRAUSSER 2010
+
+Allgemein
+---------
+ENT.EXE führt eine symmetrische entwobene Aufteilung einer Datenvektordatei x0 durch:
+
+x0
+--
+1
+2	
+3
+4
+
+x1 x2
+-- -- 
+1
+   2
+3 
+   4 
+
+Arbeitsweise
+------------
+1# Übernahme einer einspaltigen ASCII Datei. 
+
+2# Ausgabe von 2 einspaltigen ASCII Dateien.
+  
+Handhabung
+----------
+ENT [input] [output1] [output2]
+[input] ..... Eingabe Datei
+[output1] ... Ausgabe Datei 1
+[output2] ... Ausgabe Datei 2 
+
+bsp: ENT in.txt out1.txt out2.txt
+
+     

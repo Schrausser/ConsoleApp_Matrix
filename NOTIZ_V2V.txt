@@ -1,0 +1,23 @@
+V2V by Dietmar SCHRAUSSER 2010
+
+Allgemein
+---------
+V2V.EXE fügt 2 einspaltige ASCII Dateien aneinander (n1=n2 wird vorausgesetzt).
+
+Arbeitsweise
+------------
+1# Übernahme von 2 einspaltigen ASCII Dateien. 
+
+2# Ausgabe einer zweispaltigen ASCII Datei.
+  
+Handhabung
+----------
+V2V [input1] [input2] [output] [tab] 
+[input1] ... Eingabe Datei 1
+[input2] ... Eingabe Datei 2
+[output] ... Ausgabe Datei 
+[tab] ...... Spalten Trennzeichen (0):Tabulator (1):Leerzeichen (*):ein beliebiger String
+
+bsp: V2V in1.txt in2.txt out.txt 1
+     V2V in1.txt in2.txt out.txt <------>
+     

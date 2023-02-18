@@ -1,0 +1,39 @@
+NTF by Dietmar SCHRAUSSER 2009
+
+Allgemein
+---------
+NTF.EXE erzeugt einen aufsteigend geordneten linearen Datenvektor und passt diesen an ein Ziel-Koordinatensystem an. 
+Die Datenanpassung erfolgt über
+	
+ 	x'[i] = minx+(((minx-x[min])-(minx-x[i]))*((maxx-minx)/((minx-x[min])-(minx-x[max])))),
+
+bei einer Wertinvertierung errechnet man x''[i] über
+	
+	x''[i] = (minx+maxx) - x'[i],
+wobei
+	minx .... Wert des Minimalpunktes im Ziel-Koordinatensystem
+	maxx .... Wert des Maximalpunktes im Ziel-Koordinatensystem
+	x[min] .. Vektor Minimalwert
+	x[max] .. Vektor Maximalwert   
+
+Dargestellt in "Kurventransformation03.xls".
+
+Arbeitsweise
+------------
+
+# Ausgabe einer einspaltigen, aufsteigend geordneten linearen ASCII Datenvektordatei. 
+
+Handhabung
+----------
+NTF [output] [minn] [maxn] [min] [max] [inv]
+[output] ........................... Ausgabe Datei
+[minn] ............................. n Minimalwert
+[minn] ............................. n Maximalwert
+[min] ........... Koordinaten Minimalpositionswert
+[max] ........... Koordinaten Maximalpositionswert
+[inv] ............ 1:invertiert 0:nicht invertiert
+
+bsp: NTF data_out.txt 1 30000 1 30000 0
+     NTF data_out.txt 1 30000 372 50 1
+
+

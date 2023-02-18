@@ -1,0 +1,25 @@
+SRT2 by Dietmar SCHRAUSSER 2009
+
+Allgemein
+---------
+SRT2.EXE sortiert einen Datenvektor (n_max= 33000). 
+Die Datensortierung erfolgt über iterativen Paarvergleich (i vs. i+1) und Paartausch (i > i+1).
+(langsamer als SRT.EXE) 
+
+Arbeitsweise
+------------
+1# Übernahme einer einspaltigen ASCII Datenvektordatei. 
+
+2# Ausgabe einer sortierten einspaltigen ASCII Datenvektordatei. 
+
+Handhabung
+----------
+SRT2 [input] [output] [[d]] 
+[input] ... Eingabe Datei 
+[output] .. Ausgabe Datei 
+[d] ....... optional 1: absteigende Sortierung 
+
+bsp: SRT2 in.txt out.txt 
+     SRT2 in.txt out.txt 1
+
+
