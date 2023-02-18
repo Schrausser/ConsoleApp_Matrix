@@ -1,0 +1,23 @@
+TRP by Dietmar SCHRAUSSER 2010
+
+Allgemein
+---------
+TRP.EXE transponiert eine Datenmatrix (n_max= k_max= 1299). 
+Spaltentrennzeichen, Eingabedatei: Tabulator oder Leerzeichen.
+Spaltentrennzeichen, Ausgabedatei: 1 Leerzeichen.
+
+Arbeitsweise
+------------
+1# Übernahme einer ASCII Datenmatrixdatei. 
+
+2# Ausgabe einer transponierten ASCII Datenmatrixdatei.
+  
+Handhabung
+----------
+TRP [input] [output] 
+[inpup] ... Eingabe Datei
+[output] ... Ausgabe Datei 
+
+bsp: TRP in.txt out.txt
+
+     

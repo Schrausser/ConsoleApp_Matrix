@@ -1,0 +1,25 @@
+AMA by Dietmar SCHRAUSSER 2010
+
+Allgemein
+---------
+AMA.EXE addiert oder subtrahiert 2 Matrizen (k1=k2, n1=n2 wird vorausgesetzt).
+
+
+Arbeitsweise
+------------
+1# Übernahme 2er ASCII Matrixdateien. 
+
+2# Ausgabe einer ASCII Matrixdatei.
+  
+Handhabung
+----------
+AMA [matrix1] [matrix2] [output] [mode] 
+[matrix1] ... Eingabe Datei 1
+[matrix2] ... Eingabe Datei 2
+[output]  ... Ausgabe Datei
+[mode] ...... (0):Addition (1):Subtraktion
+
+bsp: AMA in1.txt in2.txt out.txt 0
+
+
+     

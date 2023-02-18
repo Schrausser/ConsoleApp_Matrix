@@ -1,0 +1,30 @@
+SMA by Dietmar SCHRAUSSER 2010
+
+Allgemein
+---------
+SMA.EXE selegiert eine Sub Matrix (oder einen Vektor) aus einer Matrix.
+
+Arbeitsweise
+------------
+1# Übernahme einer ASCII Matrixdatei. 
+
+2# Ausgabe einer ASCII (Matrix-)Datei.
+  
+Handhabung
+----------
+SMA [matrix] [output] [i0] [i1] [j0] [j1]
+[matrix] ................. Matrix Datei
+[output] ................. Matrix Ausgabe Datei
+[i0] ..................... von Zeile
+[i1] ..................... bis Zeile
+[j0] ..................... von Spalte
+[j1] ..................... bis Spalte
+
+bsp: SMA in.txt out1.txt 1 5 2 2 //Spaltenvektor j2
+     SMA in.txt out2.txt 2 2 1 5 //Zeilenvektor i2
+     SMA in.txt out3.txt 2 4 2 4 //Submarix 
+     SMA in.txt out4.txt 3 3 3 3 //Eine einzelne Zahl
+
+
+
+     

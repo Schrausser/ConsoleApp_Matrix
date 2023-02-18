@@ -1,0 +1,43 @@
+MMA by Dietmar SCHRAUSSER 2010
+
+Allgemein
+---------
+MMA.EXE multipliziert 2 Matrizen (k1=n2 wird vorausgesetzt).
+Es resultiert eine Matrix mit n=n1 und k=k2: 
+
+      *          =
+o . .   o o         o o
+o . .   . .         o .
+        . .
+
+
+o . .   o o         o o
+o . .   . .         o .
+o . .   . .         o .    
+o . .               o .
+o . .               o .
+
+
+o . .   o o o o o   o o o o o 
+o . .   . . . . .   o . . . . 
+        . . . . .
+
+
+
+Arbeitsweise
+------------
+1# Übernahme 2er ASCII Matrixdateien. 
+
+2# Ausgabe einer ASCII Matrixdatei.
+  
+Handhabung
+----------
+MMA [matrix1] [matrix2] [output] 
+[matrix1] ... Eingabe Datei 1
+[matrix2] ... Eingabe Datei 2
+[output]  ... Ausgabe Datei
+
+bsp: MMA m1.txt m2.txt m3.txt
+
+
+     

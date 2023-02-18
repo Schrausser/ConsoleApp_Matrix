@@ -1,0 +1,22 @@
+ZMA by Dietmar SCHRAUSSER 2010
+
+Allgemein
+---------
+ZMA.EXE multipliziert eine Matrix mit einer reellen Zahl.
+
+Arbeitsweise
+------------
+1# Übernahme einer ASCII Matrixdatei. 
+
+2# Ausgabe einer ASCII Matrixdatei.
+  
+Handhabung
+----------
+ZMA [matrix] [output] [wert} 
+[matrix] ... Eingabe Datei
+[output] ... Ausgabe Datei
+[wert] ..... Reelle Zahl
+
+bsp: ZMA in.txt out.txt 3
+
+     

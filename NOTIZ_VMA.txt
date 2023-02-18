@@ -1,0 +1,38 @@
+VMA by Dietmar SCHRAUSSER 2010
+
+Allgemein
+---------
+VMA.EXE berechnet die verkettete Form des Gaussschen Algorithmus 
+einer quadratischen Matrix A (k_max=n_max= 250,a11<>0).
+
+Es resultieren 2 Dreiecksmatrizen B und C: 
+
+. . .  A
+. . .  
+. . .
+
+. . .  B
+  . .
+    .
+.      C
+..
+
+Die Determinante von A (det A) ist das Produkt der Elemente in der 
+Hauptdiagonale von B (TT bii).
+
+
+Arbeitsweise
+------------
+1# Übernahme einer quadratischen ASCII Matrixdatei. 
+
+2# Ausgabe einer quadratischen ASCII Matrixdatei.
+  
+Handhabung
+----------
+VMA [matrix] [output] 
+[matrix] ... Eingabe Datei
+[output] ... Ausgabe Datei
+
+bsp: VMA in.txt out.txt 
+
+     

@@ -1,0 +1,27 @@
+QMA by Dietmar SCHRAUSSER 2010
+
+Allgemein
+---------
+QMA.EXE quadriert eine quadratische Matrix. 
+
+    *       =
+o .   o o      o o
+o .   . .      o .
+        
+
+Arbeitsweise
+------------
+1# Übernahme einer quadratischen ASCII Matrixdateien. 
+
+2# Ausgabe einer quadratischen ASCII Matrixdatei.
+  
+Handhabung
+----------
+MMA [matrix] [matrix] [output] 
+[matrix] ... Eingabe Datei 
+[output] ... Ausgabe Datei
+
+bsp: QMA a.txt b.txt
+
+
+     

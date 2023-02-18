@@ -1,0 +1,41 @@
+IMA by Dietmar SCHRAUSSER 2010
+
+Allgemein
+---------
+IMA.EXE berechnet die inverse A-1 von A über die verkettete Form 
+des Gaussschen Algorithmus (k_max=n_max= 200,a11<>0).
+
+Es resultieren 2 Dreiecksmatrizen B und C, sowie die Matrix T 
+zur erzeugten Einheitsmatrix E, A-1 entsteht transponiert. 
+
+. . .  A  1 0 0 E
+. . .     0 1 0
+. . .     0 0 1
+
+. . .  B  . . . T
+  . .     . . .
+    .     . . .
+.      C
+..
+
+. . . (A-1)'
+. . .
+. . .
+
+
+Arbeitsweise
+------------
+1# Übernahme einer quadratischen ASCII Matrixdatei. 
+
+2# Ausgabe einer quadratischen ASCII Matrixdatei.
+  
+Handhabung
+----------
+IMA [matrix] [output] 
+[matrix] ... Eingabe Datei
+[output] ... Ausgabe Datei
+
+bsp: IMA in.txt out.txt 
+
+
+     
