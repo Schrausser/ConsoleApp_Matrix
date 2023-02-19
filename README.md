@@ -22,6 +22,20 @@ des Gaussschen Algorithmus
 Es resultieren 2 Dreiecksmatrizen B und C, sowie die Matrix T 
 zur erzeugten Einheitsmatrix E, 1/A entsteht transponiert. 
 
+    . . .  A  1 0 0 E
+    . . .     0 1 0
+    . . .     0 0 1
+    
+    . . .  B  . . . T
+      . .     . . .
+        .     . . .
+    .      C
+    ..
+
+    . . . (1/A)'
+    . . .
+    . . .
+
 - Übernahme einer quadratischen ASCII Matrixdatei. 
 - Ausgabe einer quadratischen ASCII Matrixdatei.
   
@@ -32,12 +46,34 @@ Es resultiert eine Matrix mit
 
      n=n1 und k=k2.    
 
+           *          =
+     o . .   o o         o o
+     o . .   . .         o .
+             . .
+     
+     
+     o . .   o o         o o
+     o . .   . .         o .
+     o . .   . .         o .    
+     o . .               o .
+     o . .               o .
+     
+     
+     o . .   o o o o o   o o o o o 
+     o . .   . . . . .   o . . . . 
+             . . . . .
+
+
 - Übernahme 2er ASCII Matrixdateien. 
 - Ausgabe einer ASCII Matrixdatei.
 
 ## QMA
 
-Quadriert eine quadratische Matrix. 
+Quadriert eine quadratische Matrix.
+
+         *       =
+     o .   o o      o o
+     o .   . .      o .
  
 - Übernahme einer quadratischen ASCII Matrixdateien. 
 - Ausgabe einer quadratischen ASCII Matrixdatei.
