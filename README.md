@@ -20,7 +20,7 @@ des Gaussschen Algorithmus
      k_max=n_max= 200,a11<>0.
 
 Es resultieren 2 Dreiecksmatrizen B und C, sowie die Matrix T 
-zur erzeugten Einheitsmatrix E, 1/A entsteht transponiert. 
+zur erzeugten Einheitsmatrix E, 1/A entsteht transponiert:
 
     . . .  A  1 0 0 E
     . . .     0 1 0
@@ -44,7 +44,7 @@ zur erzeugten Einheitsmatrix E, 1/A entsteht transponiert.
 Multipliziert 2 Matrizen (k1=n2 wird vorausgesetzt).
 Es resultiert eine Matrix mit 
 
-     n=n1 und k=k2.    
+     n=n1 und k=k2,   
 
            *          =
      o . .   o o         o o
@@ -69,7 +69,7 @@ Es resultiert eine Matrix mit
 
 ## QMA
 
-Quadriert eine quadratische Matrix.
+Quadriert eine quadratische Matrix:
 
          *       =
      o .   o o      o o
@@ -87,7 +87,12 @@ Selegiert eine Sub Matrix (oder einen Vektor) aus einer Matrix.
 
 ## SPUR
 
-Berechnet die Spur (sp) einer quadratischen Matrix A.
+Berechnet die Spur (sp) einer quadratischen Matrix A:
+
+     o . .  A
+     . o .  
+     . . o
+          sp A
 
 - Übernahme einer quadratischen ASCII Matrixdatei. 
 - Ausgabe von sp A in die Datei 'SPUR.txt'.
@@ -111,7 +116,19 @@ einer quadratischen Matrix A
 
      k_max=n_max= 250,a11<>0.
 
-Es resultieren 2 Dreiecksmatrizen B und C. Die Determinante von A (det A) ist das Produkt der Elemente in der Hauptdiagonale von B (TT bii).
+Es resultieren 2 Dreiecksmatrizen B und C:
+
+     . . .  A
+     . . .  
+     . . .
+    
+     . . .  B
+       . .
+         .
+     .      C
+     ..
+
+Die Determinante von A (det A) ist das Produkt der Elemente in der Hauptdiagonale von B (TT bii).
 
 - Übernahme einer quadratischen ASCII Matrixdatei. 
 - Ausgabe einer quadratischen ASCII Matrixdatei.
