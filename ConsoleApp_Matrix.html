@@ -1,0 +1,270 @@
+<html> 
+<head>
+<meta charset="utf-8">
+ 
+<title></title>
+
+</head> 
+<body>
+
+<style>html { background:white; color:black; word-wrap: break-word; margin:5px; line-height:150%; } ul{ padding-left:1.5em; } strong, em{color:#b58900} code, pre, blockquote { background:#eee; color:black; tab-size: 1; } h1,h2,h3,h4,h5,h6{ line-height:150%; } h1 { color:#268bd2; } h2,h3,h4,h5,h6 { color:#268bd2; } a { color:#268bd2; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; text-decoration:none; } :active, :focus { outline: none; -moz-outline-style: none; } pre { padding: 10px 10px 10px 10px; font-family: monospace; font-size: 95%; line-height: 140%; white-space: pre; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -o-pre-wrap; border:1px solid #eee; border-radius:10px; box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); } code { font-family: monospace; font-size: 95%; line-height: 140%; white-space: pre; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -o-pre-wrap; } table{ width:100%; box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); } table, th, td { border-collapse:collapse; padding:10px; border:1px solid #ccc; vertical-align: top; } tbody tr:nth-child(odd) { background:#eee; } noheader th {display:none;} blockquote { border-left: 10px solid #ccc; box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); } blockquote {margin:0px 0px 0px 10px;padding:0px;padding-left:1em;} img { width: 80%; display: block; border: solid #ccc 1px; height: auto; margin-left: auto; margin-right: auto; box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); } center p{text-align:center;} left p{text-align:left;} right p{text-align:right;} img[title=right]{width:40%; float:right; padding: 1px;margin: 10px;} img[title=left]{width:40%; float:left; padding: 1px;margin: 10px;} kbd { padding:0.1em 0.6em; border:1px solid #ccc; font-size:11px; font-family:arial,helvetica,sans-serif; background-color:#f7f7f7; color:#333; border-radius:3px; display:inline-block; margin:0 0.1em; white-space:nowrap; }</style>
+<h1 id="consoleapp_matrix">ConsoleApp_Matrix</h1>
+<p>Console applications for matrix calculation and tools (German):</p>
+<h2 id="ama">AMA</h2>
+<p>Addiert oder subtrahiert 2 Matrizen</p>
+<pre><code> k1=k2, n1=n2 
+</code></pre>
+<p>wird vorausgesetzt.</p>
+<ul>
+<li>Übernahme 2er ASCII Matrixdateien.</li>
+<li>Ausgabe einer ASCII Matrixdatei.</li>
+</ul>
+<h2 id="ima">IMA</h2>
+<p>Berechnet die inverse 1/A von A über die verkettete Form
+des Gaussschen Algorithmus</p>
+<pre><code> k_max=n_max= 200,a11&lt;&gt;0.
+</code></pre>
+<p>Es resultieren 2 Dreiecksmatrizen B und C, sowie die Matrix T
+zur erzeugten Einheitsmatrix E, 1/A entsteht transponiert:</p>
+<pre><code>. . .  A  1 0 0 E
+. . .     0 1 0
+. . .     0 0 1
+
+. . .  B  . . . T
+  . .     . . .
+    .     . . .
+.      C
+..
+
+. . . (1/A)'
+. . .
+. . .
+</code></pre>
+<ul>
+<li>Übernahme einer quadratischen ASCII Matrixdatei.</li>
+<li>Ausgabe einer quadratischen ASCII Matrixdatei.</li>
+</ul>
+<h2 id="mma">MMA</h2>
+<p>Multipliziert 2 Matrizen (k1=n2 wird vorausgesetzt).
+Es resultiert eine Matrix mit</p>
+<pre><code> n=n1 und k=k2,   
+
+       *          =
+ o . .   o o         o o
+ o . .   . .         o .
+         . .
+ 
+ 
+ o . .   o o         o o
+ o . .   . .         o .
+ o . .   . .         o .    
+ o . .               o .
+ o . .               o .
+ 
+ 
+ o . .   o o o o o   o o o o o 
+ o . .   . . . . .   o . . . . 
+         . . . . .
+</code></pre>
+<ul>
+<li>Übernahme 2er ASCII Matrixdateien.</li>
+<li>Ausgabe einer ASCII Matrixdatei.</li>
+</ul>
+<h2 id="qma">QMA</h2>
+<p>Quadriert eine quadratische Matrix:</p>
+<pre><code>     *       =
+ o .   o o      o o
+ o .   . .      o .
+</code></pre>
+<ul>
+<li>Übernahme einer quadratischen ASCII Matrixdateien.</li>
+<li>Ausgabe einer quadratischen ASCII Matrixdatei.</li>
+</ul>
+<h2 id="sma">SMA</h2>
+<p>Selegiert eine Sub Matrix (oder einen Vektor) aus einer Matrix.</p>
+<ul>
+<li>Übernahme einer ASCII Matrixdatei.</li>
+<li>Ausgabe einer ASCII (Matrix-)Datei.</li>
+</ul>
+<h2 id="spur">SPUR</h2>
+<p>Berechnet die Spur (sp) einer quadratischen Matrix A:</p>
+<pre><code> o . .  A
+ . o .  
+ . . o
+      sp A
+</code></pre>
+<ul>
+<li>Übernahme einer quadratischen ASCII Matrixdatei.</li>
+<li>Ausgabe von sp A in die Datei 'SPUR.txt'.</li>
+</ul>
+<h2 id="trp">TRP</h2>
+<p>Transponiert eine Datenmatrix</p>
+<pre><code> n_max= k_max= 1299. 
+</code></pre>
+<p>Spaltentrennzeichen, Eingabedatei: Tabulator oder Leerzeichen.
+Spaltentrennzeichen, Ausgabedatei: 1 Leerzeichen.</p>
+<ul>
+<li>Übernahme einer ASCII Datenmatrixdatei.</li>
+<li>Ausgabe einer transponierten ASCII Datenmatrixdatei.</li>
+</ul>
+<h2 id="vma">VMA</h2>
+<p>Berechnet die verkettete Form des Gaussschen Algorithmus
+einer quadratischen Matrix A</p>
+<pre><code> k_max=n_max= 250,a11&lt;&gt;0.
+</code></pre>
+<p>Es resultieren 2 Dreiecksmatrizen B und C:</p>
+<pre><code> . . .  A
+ . . .  
+ . . .
+
+ . . .  B
+   . .
+     .
+ .      C
+ ..
+</code></pre>
+<p>Die Determinante von A (det A) ist das Produkt der Elemente in der Hauptdiagonale von B (TT bii).</p>
+<ul>
+<li>Übernahme einer quadratischen ASCII Matrixdatei.</li>
+<li>Ausgabe einer quadratischen ASCII Matrixdatei.</li>
+</ul>
+<h2 id="zma">ZMA</h2>
+<p>Multipliziert eine Matrix mit einer reellen Zahl.</p>
+<ul>
+<li>Übernahme einer ASCII Matrixdatei.</li>
+<li>Ausgabe einer ASCII Matrixdatei.</li>
+</ul>
+<h2 id="ent">ENT</h2>
+<p>Führt eine symmetrische entwobene Aufteilung einer Datenvektordatei x0 durch:</p>
+<pre><code> x0
+ --
+ 1
+ 2	
+ 3
+ 4
+
+ x1 x2
+ -- -- 
+ 1
+    2
+ 3 
+    4 
+</code></pre>
+<ul>
+<li>Übernahme einer einspaltigen ASCII Datei.</li>
+<li>Ausgabe von 2 einspaltigen ASCII Dateien.</li>
+</ul>
+<h2 id="ktf">KTF</h2>
+<p>Verringert oder vergrössert den Umfang eines perfekt linearen Datenvektors. Die bis n' iterative Datenanpassung erfolgt über</p>
+<pre><code>xi[n]= xi[n+1](n/(n-1)) bei n'&lt; n,
+xi[n]= xi[n-1]((n-2)/(n-1)) bei n' &gt; n.
+</code></pre>
+<ul>
+<li>Übernahme einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang n.</li>
+<li>Ausgabe einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang n'.</li>
+</ul>
+<h2 id="ktf2">KTF2</h2>
+<p>Verringert oder vergrössert den Umfang eines Datenvektors (n_max= n'_max= 33000).</p>
+<ul>
+<li>Übernahme einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang n.</li>
+<li>Ausgabe einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang n'.</li>
+</ul>
+<h2 id="ktf3">KTF3</h2>
+<p>Passt einen Datenvektor an ein Ziel-Koordinatensystem an.
+Die Datenanpassung erfolgt über</p>
+<pre><code>  x'[i] = minx+(((minx-x[min])-(minx-x[i]))*((maxx-minx)/((minx-x[min])-(minx-x[max])))),
+</code></pre>
+<p>bei einer Wertinvertierung errechnet man x''[i] über</p>
+<pre><code>  x''[i] = (minx+maxx) - x'[i],
+</code></pre>
+<p>mit</p>
+<pre><code>  minx  ... Wert des Minimalpunktes im Ziel-Koordinatensystem
+  maxx .... Wert des Maximalpunktes im Ziel-Koordinatensystem
+  x[min] .. Vektor Minimalwert
+  x[max] .. Vektor Maximalwert   
+</code></pre>
+<ul>
+<li>
+<p>Übernahme einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei.</p>
+</li>
+<li>
+<p>Ausgabe einer zweispaltigen, aufsteigend geordneten ASCII Datenmatrixdatei beinhaltend:</p>
+<pre><code>Den an das Ziel-Koordinatensystem angepassten Datenvektor. 
+Den ursprünglichen Datenvektor. 
+</code></pre>
+</li>
+</ul>
+<h2 id="ntf">NTF</h2>
+<p>Erzeugt einen aufsteigend geordneten linearen Datenvektor und passt diesen an ein Ziel-Koordinatensystem an.
+Die Datenanpassung erfolgt über</p>
+<pre><code> x'[i] = minx+(((minx-x[min])-(minx-x[i]))*((maxx-minx)/((minx-x[min])-(minx-x[max])))),
+</code></pre>
+<p>bei einer Wertinvertierung errechnet man x''[i] über</p>
+<pre><code> x''[i] = (minx+maxx) - x'[i],
+</code></pre>
+<p>mit</p>
+<pre><code> minx .... Wert des Minimalpunktes im Ziel-Koordinatensystem
+ maxx .... Wert des Maximalpunktes im Ziel-Koordinatensystem
+ x[min] .. Vektor Minimalwert
+ x[max] .. Vektor Maximalwert   
+</code></pre>
+<ul>
+<li>Ausgabe einer einspaltigen, aufsteigend geordneten linearen ASCII Datenvektordatei.</li>
+</ul>
+<h2 id="sel">SEL</h2>
+<p>Selegiert einen Datenvektor aus einer Datenmatrix</p>
+<pre><code> n_max= 33000. 
+</code></pre>
+<ul>
+<li>Übernahme einer ASCII Datenmatrixdatei.</li>
+<li>Ausgabe einer einspaltigen ASCII Datenvektordatei.</li>
+</ul>
+<h2 id="srt">SRT</h2>
+<p>Sortiert einen Datenvektor</p>
+<pre><code> n_max= 33000, 16 stellige Ausgabe. 
+</code></pre>
+<ul>
+<li>Übernahme einer einspaltigen ASCII Datenvektordatei.</li>
+<li>Ausgabe einer sortierten einspaltigen ASCII Datenvektordatei.</li>
+</ul>
+<h2 id="srt2">SRT2</h2>
+<p>Sortiert einen Datenvektor</p>
+<pre><code> n_max= 33000.
+</code></pre>
+<p>Die Datensortierung erfolgt über iterativen Paarvergleich</p>
+<pre><code> (i vs. i+1) 
+</code></pre>
+<p>und Paartausch</p>
+<pre><code> (i &gt; i+1).
+</code></pre>
+<p>(langsamer als SRT.EXE)</p>
+<ul>
+<li>Übernahme einer einspaltigen ASCII Datenvektordatei.</li>
+<li>Ausgabe einer sortierten einspaltigen ASCII Datenvektordatei.</li>
+</ul>
+<h2 id="srt3">SRT3</h2>
+<p>Sortiert einen Datenvektor</p>
+<pre><code> n_max= 33000, max 8-Stellen. 
+</code></pre>
+<p>Sehr schnelle Berechnung durch Umsetzung der C-eigenen 'Qsort' Funktion.</p>
+<ul>
+<li>Übernahme einer einspaltigen ASCII Datenvektordatei.</li>
+<li>Ausgabe einer sortierten einspaltigen ASCII Datenvektordatei.</li>
+</ul>
+<h2 id="v2v">V2V</h2>
+<p>Fügt 2 einspaltige ASCII Dateien aneinander (n1=n2 wird vorausgesetzt).</p>
+<ul>
+<li>Übernahme von 2 einspaltigen ASCII Dateien.</li>
+<li>Ausgabe einer zweispaltigen ASCII Datei.</li>
+</ul>
+<h2 id="z2z">Z2Z</h2>
+<p>Fügt zwei ASCII Dateien aneinander.</p>
+<ul>
+<li>Übernahme zweier ASCII Dateien.</li>
+<li>Ausgabe einer ASCII Datei.</li>
+</ul>
+
+
+</body>
+</html>
+    
