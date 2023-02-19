@@ -142,7 +142,21 @@ Multipliziert eine Matrix mit einer reellen Zahl.
   
 ## ENT
 
-Führt eine symmetrische entwobene Aufteilung einer Datenvektordatei x0 durch.
+Führt eine symmetrische entwobene Aufteilung einer Datenvektordatei x0 durch:
+
+     x0
+     --
+     1
+     2	
+     3
+     4
+
+     x1 x2
+     -- -- 
+     1
+        2
+     3 
+        4 
 
 - Übernahme einer einspaltigen ASCII Datei. 
 - Ausgabe von 2 einspaltigen ASCII Dateien.
