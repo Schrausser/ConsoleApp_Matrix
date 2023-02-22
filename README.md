@@ -238,6 +238,17 @@ Sortiert einen Datenvektor
 - Übernahme einer einspaltigen ASCII Datenvektordatei. 
 - Ausgabe einer sortierten einspaltigen ASCII Datenvektordatei. 
 
+## SRT1
+
+Verkettet 2 sortierte Datenvektoren 
+
+     Filestream Verarbeitung, n_max -> oo.
+
+Arbeitsweise
+------------
+- Übernahme von zwei aufsteigend sortierten einspaltigen ASCII Datenvektordateien. 
+- Ausgabe einer sortierten einspaltigen ASCII Datenvektordatei. 
+
 ## SRT2
 
 Sortiert einen Datenvektor
