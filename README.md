@@ -183,15 +183,16 @@ Verringert oder vergrössert den Umfang eines Datenvektors ($n_{max}= n'_{max}= 
 Passt einen Datenvektor an ein Ziel-Koordinatensystem an. 
 Die Datenanpassung erfolgt über
 	
-$$x'_i = minx+(((minx-x_{min})-(minx-x_i))*(\frac{maxx-minx/(minx-x_{min})-(minx-x_{max})})),$$
+
+$$x_i'=min_x+《[(min_x-x_{min})-(min_x-x_i)]\frac{max_x-min_x}{(min_x-x_{min})-(min_x-x_{max})}》$$
 
 bei einer Wertinvertierung errechnet man $x''_i$ über
 	
-$$x''_i = (minx+maxx) - x'_i,$$
+$$x''_i = (min_x+max_x) - x'_i,$$
 mit
 
-$minx$  ... Wert des Minimalpunktes im Ziel-Koordinatensystem  
-$maxx$ .... Wert des Maximalpunktes im Ziel-Koordinatensystem  
+$min_x$  ... Wert des Minimalpunktes im Ziel-Koordinatensystem  
+$max_x$ .... Wert des Maximalpunktes im Ziel-Koordinatensystem  
 $x_{min}$ .. Vektor Minimalwert  
 $x_{max}$ .. Vektor Maximalwert  
 
@@ -205,18 +206,18 @@ $x_{max}$ .. Vektor Maximalwert
 
 Erzeugt einen aufsteigend geordneten linearen Datenvektor und passt diesen an ein Ziel-Koordinatensystem an. 
 Die Datenanpassung erfolgt über
-	
-     x'[i] = minx+(((minx-x[min])-(minx-x[i]))*((maxx-minx)/((minx-x[min])-(minx-x[max])))),
 
-bei einer Wertinvertierung errechnet man x''[i] über
+$$x_i'=min_x+《[(min_x-x_{min})-(min_x-x_i)]\frac{max_x-min_x}{(min_x-x_{min})-(min_x-x_{max})}》$$
+
+bei einer Wertinvertierung errechnet man $x_i''$ über
 	
-     x''[i] = (minx+maxx) - x'[i],
+$$x''_i = (min_x+max_x) - x'_i,$$
 mit
 
-     minx .... Wert des Minimalpunktes im Ziel-Koordinatensystem
-     maxx .... Wert des Maximalpunktes im Ziel-Koordinatensystem
-     x[min] .. Vektor Minimalwert
-     x[max] .. Vektor Maximalwert   
+$min_x$ .... Wert des Minimalpunktes im Ziel-Koordinatensystem  
+$max_x$ .... Wert des Maximalpunktes im Ziel-Koordinatensystem  
+$x_{min}$ .. Vektor Minimalwert  
+$x_{max}$ .. Vektor Maximalwert  
 
  - Ausgabe einer einspaltigen, aufsteigend geordneten linearen ASCII Datenvektordatei.
 
