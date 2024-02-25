@@ -138,6 +138,17 @@ Berechnet die Spur (*sp*) einer quadratischen Matrix $A$:
 - Übernahme einer quadratischen ASCII Matrixdatei. 
 - Ausgabe von *sp* $A$ in die Datei `SPUR.txt`.
 
+Handhabung
+~~~
+SPUR [matrix] [mode] 
+[matrix] ... Eingabe Datei
+[mode] ..... Art der Spurberechnung:
+(0): Addition der Diagonalelemente (Standard)
+(1): Multiplikation der Diagonalelemente (siehe Determinante, VMA.exe)
+(2): Subtraktion der Diagonalelemente
+(3): Division der Diagonalelemente
+~~~
+
 ## TRP
 
 Transponiert eine Datenmatrix 
@@ -149,6 +160,13 @@ Spaltentrennzeichen, Ausgabedatei: 1 Leerzeichen.
 
 - Übernahme einer ASCII Datenmatrixdatei. 
 - Ausgabe einer transponierten ASCII Datenmatrixdatei.
+
+Handhabung
+~~~
+TRP [input] [output] 
+[inpup] ... Eingabe Datei
+[output] ... Ausgabe Datei
+~~~
 
 ## VMA
 
@@ -174,13 +192,28 @@ Die Determinante von $A$ (*det* $A)$ ist das Produkt der Elemente in der Hauptdi
 - Übernahme einer quadratischen ASCII Matrixdatei. 
 - Ausgabe einer quadratischen ASCII Matrixdatei.
 
+Handhabung
+~~~
+VMA [matrix] [output] 
+[matrix] ... Eingabe Datei
+[output] ... Ausgabe Datei
+~~~
+
 ## ZMA
 
 Multipliziert eine Matrix mit einer reellen Zahl.
 
 - Übernahme einer ASCII Matrixdatei. 
 - Ausgabe einer ASCII Matrixdatei.
-  
+
+Handhabung
+~~~
+ZMA [matrix] [output] [wert} 
+[matrix] ... Eingabe Datei
+[output] ... Ausgabe Datei
+[wert] ..... Reelle Zahl
+~~~
+
 ## ENT
 
 Führt eine symmetrische entwobene Aufteilung einer Datenvektordatei *x0* durch:
