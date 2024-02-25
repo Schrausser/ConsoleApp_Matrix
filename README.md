@@ -299,6 +299,16 @@ $x_{max}$ .. Vektor Maximalwert
       Den an das Ziel-Koordinatensystem angepassten Datenvektor. 
       Den ursprünglichen Datenvektor. 
 
+Handhabung
+~~~
+KTF3 [input] [output] [minx] [maxx] [inv]
+[input] ... Eingabe Datei 
+[output] .. Ausgabe Datei 
+[minx] .... Wert des Minimalpunktes im Ziel-Koordinatensystem
+{maxx] .... Wert des Maximalpunktes im Ziel-Koordinatensystem
+[inv] ..... 1: Wertinvertierung 0: Keine Wertinvertierung
+~~~
+
 ## NTF
 
 Erzeugt einen aufsteigend geordneten linearen Datenvektor und passt diesen an ein Ziel-Koordinatensystem an. 
@@ -318,6 +328,17 @@ $x_{max}$ .. Vektor Maximalwert
 
  - Ausgabe einer einspaltigen, aufsteigend geordneten linearen ASCII Datenvektordatei.
 
+Handhabung
+~~~
+NTF [output] [minn] [maxn] [min] [max] [inv]
+[output] ........................... Ausgabe Datei
+[minn] ............................. n Minimalwert
+[minn] ............................. n Maximalwert
+[min] ........... Koordinaten Minimalpositionswert
+[max] ........... Koordinaten Maximalpositionswert
+[inv] ............ 1:invertiert 0:nicht invertiert
+~~~
+
 ## SEL
 
 Selegiert einen Datenvektor aus einer Datenmatrix 
@@ -325,7 +346,16 @@ Selegiert einen Datenvektor aus einer Datenmatrix
 $$n_{max}= 33000.$$
 
 - Übernahme einer ASCII Datenmatrixdatei. 
-- Ausgabe einer einspaltigen ASCII Datenvektordatei. 
+- Ausgabe einer einspaltigen ASCII Datenvektordatei.
+
+Handhabung
+~~~
+SEL [input] [output] [a] [k] 
+[input] ... Eingabe Datei 
+[output] .. Ausgabe Datei 
+[a] ....... Vektornummer 
+[k] ....... Vektoranzahl 
+~~~
 
 ## SRT
 
