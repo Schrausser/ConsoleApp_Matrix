@@ -101,7 +101,7 @@ Berechnet die Spur (*sp*) einer quadratischen Matrix $A$:
 
 Transponiert eine Datenmatrix 
 
-$$n_{max}= k_{max}= 1299$$. 
+$$n_{max}= k_{max}= 1299.$$
 
 Spaltentrennzeichen, Eingabedatei: Tabulator oder Leerzeichen.
 Spaltentrennzeichen, Ausgabedatei: 1 Leerzeichen.
@@ -142,7 +142,7 @@ Multipliziert eine Matrix mit einer reellen Zahl.
   
 ## ENT
 
-Führt eine symmetrische entwobene Aufteilung einer Datenvektordatei x0 durch:
+Führt eine symmetrische entwobene Aufteilung einer Datenvektordatei *x0* durch:
 
      x0
      --
@@ -163,10 +163,10 @@ Führt eine symmetrische entwobene Aufteilung einer Datenvektordatei x0 durch:
 
 ## KTF
 
-Verringert oder vergrössert den Umfang eines perfekt linearen Datenvektors. Die bis n' iterative Datenanpassung erfolgt über 
+Verringert oder vergrössert den Umfang eines perfekt linearen Datenvektors. Die bis $n'$ iterative Datenanpassung erfolgt über 
 	
-	xi[n]= xi[n+1](n/(n-1)) bei n'< n,
-	xi[n]= xi[n-1]((n-2)/(n-1)) bei n' > n.
+$$x_i[n]= x_i[n+1]\frac{n}{n-1}; n'\ltn$$,
+$$x_i[n]= x_i[n-1]\frac{n-2}{n-1} ; n'\gtn$$.
 
 - Übernahme einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang n. 
 - Ausgabe einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang n'. 
