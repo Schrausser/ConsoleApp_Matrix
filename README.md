@@ -11,7 +11,16 @@ wird vorausgesetzt.
 
 - Übernahme 2er ASCII Matrixdateien. 
 - Ausgabe einer ASCII Matrixdatei.
-  
+
+Handhabung
+~~~
+AMA [matrix1] [matrix2] [output] [mode] 
+[matrix1] ... Eingabe Datei 1
+[matrix2] ... Eingabe Datei 2
+[output]  ... Ausgabe Datei
+[mode] ...... (0):Addition (1):Subtraktion
+~~~
+
 ## IMA
 
 Berechnet die inverse $A^{-1}$ von $A$ über die verkettete Form 
@@ -38,7 +47,13 @@ zur erzeugten Einheitsmatrix $E$, $A^{-1}$ entsteht transponiert:
 
 - Übernahme einer quadratischen ASCII Matrixdatei. 
 - Ausgabe einer quadratischen ASCII Matrixdatei.
-  
+- 
+Handhabung
+~~~
+IMA [matrix] [output] 
+[matrix] ... Eingabe Datei
+[output] ... Ausgabe Datei
+~~~
 ## MMA
 
 Multipliziert 2 Matrizen ($k_1=n_2$ wird vorausgesetzt).
@@ -67,6 +82,14 @@ $$n=n_1,\text{ }k=k_2:$$
 - Übernahme 2er ASCII Matrixdateien. 
 - Ausgabe einer ASCII Matrixdatei.
 
+Handhabung
+~~~
+MMA [matrix1] [matrix2] [output] 
+[matrix1] ... Eingabe Datei 1
+[matrix2] ... Eingabe Datei 2
+[output]  ... Ausgabe Datei
+~~~
+
 ## QMA
 
 Quadriert eine quadratische Matrix:
@@ -78,12 +101,30 @@ Quadriert eine quadratische Matrix:
 - Übernahme einer quadratischen ASCII Matrixdateien. 
 - Ausgabe einer quadratischen ASCII Matrixdatei.
 
+Handhabung
+~~~
+QMA [matrix] [matrix] [output] 
+[matrix] ... Eingabe Datei 
+[output] ... Ausgabe Datei
+~~~
+
 ## SMA
 
 Selegiert eine Sub Matrix (oder einen Vektor) aus einer Matrix.
 
 - Übernahme einer ASCII Matrixdatei. 
 - Ausgabe einer ASCII (Matrix-)Datei.
+
+Handhabung
+~~~
+SMA [matrix] [output] [i0] [i1] [j0] [j1]
+[matrix] ................. Matrix Datei
+[output] ................. Matrix Ausgabe Datei
+[i0] ..................... von Zeile
+[i1] ..................... bis Zeile
+[j0] ..................... von Spalte
+[j1] ..................... bis Spalte
+~~~
 
 ## SPUR
 
