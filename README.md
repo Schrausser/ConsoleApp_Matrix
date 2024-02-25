@@ -47,7 +47,7 @@ zur erzeugten Einheitsmatrix $E$, $A^{-1}$ entsteht transponiert:
 
 - Übernahme einer quadratischen ASCII Matrixdatei. 
 - Ausgabe einer quadratischen ASCII Matrixdatei.
-- 
+
 Handhabung
 ~~~
 IMA [matrix] [output] 
