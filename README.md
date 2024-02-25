@@ -225,7 +225,7 @@ $x_{max}$ .. Vektor Maximalwert
 
 Selegiert einen Datenvektor aus einer Datenmatrix 
 
-     n_max= 33000. 
+$$n_{max}= 33000.$$
 
 - Übernahme einer ASCII Datenmatrixdatei. 
 - Ausgabe einer einspaltigen ASCII Datenvektordatei. 
@@ -234,16 +234,17 @@ Selegiert einen Datenvektor aus einer Datenmatrix
 
 Sortiert einen Datenvektor
 
-     n_max= 33000, 16 stellige Ausgabe. 
+$$n_{max}= 33000,$$
+
+16 stellige Ausgabe. 
 
 - Übernahme einer einspaltigen ASCII Datenvektordatei. 
 - Ausgabe einer sortierten einspaltigen ASCII Datenvektordatei. 
 
 ## SRT1
 
-Verkettet 2 sortierte Datenvektoren 
-
-     Filestream Verarbeitung, n_max -> oo.
+Verkettet 2 sortierte Datenvektoren mit
+Filestream Verarbeitung, $n_{max} -> oo$.
 
 Arbeitsweise
 ------------
@@ -254,17 +255,17 @@ Arbeitsweise
 
 Sortiert einen Datenvektor
     
-     n_max= 33000.
+$$n_{max}= 33000$.
 
 Die Datensortierung erfolgt über iterativen Paarvergleich 
     
-     (i vs. i+1) 
+$$i vs. i+1$$
 
 und Paartausch 
 
-     (i > i+1).
+$$i > i+1$$.
 
-(langsamer als SRT.EXE) 
+(langsamer als `SRT.EXE`) 
 
 - Übernahme einer einspaltigen ASCII Datenvektordatei. 
 - Ausgabe einer sortierten einspaltigen ASCII Datenvektordatei. 
