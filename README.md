@@ -5,7 +5,7 @@ Console applications for matrix *calculation* and *tools* (German):
 
 Addiert oder subtrahiert 2 Matrizen
 
-$$k_1=k_2, n_1=n_2$$
+$$k_1=k_2\text { und } n_1=n_2$$
 
 wird vorausgesetzt.
 
@@ -17,7 +17,7 @@ wird vorausgesetzt.
 Berechnet die inverse $A^{-1}$ von $A$ über die verkettete Form 
 des Gaussschen Algorithmus 
 
-$$k_{max}=n_{max}= 200,a_{11}\ne0$$.
+$$k_{max}=n_{max}= 200,a_{11}\ne0.$$
 
 Es resultieren 2 Dreiecksmatrizen $B$ und $C$, sowie die Matrix $T$ 
 zur erzeugten Einheitsmatrix $E$, $A^{-1}$ entsteht transponiert:
@@ -44,7 +44,7 @@ zur erzeugten Einheitsmatrix $E$, $A^{-1}$ entsteht transponiert:
 Multipliziert 2 Matrizen ($k_1=n_2$ wird vorausgesetzt).
 Es resultiert eine Matrix mit 
 
-$$n=n_1,k=k_2,$$
+$$n=n_1,\text{ }k=k_2:$$
 
            *          =
      o . .   o o         o o
@@ -114,7 +114,7 @@ Spaltentrennzeichen, Ausgabedatei: 1 Leerzeichen.
 Berechnet die verkettete Form des Gaussschen Algorithmus 
 einer quadratischen Matrix $A$, mit 
 
-$$k_{max}=n_{max}= 250,a_{11}\ne0$$.
+$$k_{max}=n_{max}= 250,a_{11}\ne0.$$
 
 Es resultieren 2 Dreiecksmatrizen $B$ und $C$:
 
@@ -168,15 +168,15 @@ Verringert oder vergrössert den Umfang eines perfekt linearen Datenvektors. Die
 $$x_i[n]= x_i[n+1]\frac{n}{n-1}; n'\lt n,$$
 $$x_i[n]= x_i[n-1]\frac{n-2}{n-1} ; n'\gt n.$$
 
-- Übernahme einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang n. 
-- Ausgabe einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang n'. 
+- Übernahme einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang $n$. 
+- Ausgabe einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang $n'$. 
 
 ## KTF2
 
 Verringert oder vergrössert den Umfang eines Datenvektors ($n_{max}= n'_{max}= 33000$). 
 
-- Übernahme einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang n. 
-- Ausgabe einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang n'.
+- Übernahme einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang $n$. 
+- Ausgabe einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang $n'$.
 
 ## KTF3
 
@@ -244,10 +244,8 @@ $$n_{max}= 33000,$$
 ## SRT1
 
 Verkettet 2 sortierte Datenvektoren mit
-Filestream Verarbeitung, $n_{max} -> oo$.
+Filestream Verarbeitung, $n_{max} \rightarrow \infty$.
 
-Arbeitsweise
-------------
 - Übernahme von zwei aufsteigend sortierten einspaltigen ASCII Datenvektordateien. 
 - Ausgabe einer sortierten einspaltigen ASCII Datenvektordatei. 
 
@@ -255,15 +253,15 @@ Arbeitsweise
 
 Sortiert einen Datenvektor
     
-$$n_{max}= 33000$.
+$$n_{max}= 33000.$$
 
 Die Datensortierung erfolgt über iterativen Paarvergleich 
     
-$$i vs. i+1$$
+$$i \text{ vs. } i+1$$
 
 und Paartausch 
 
-$$i > i+1$$.
+$$i > i+1.$$
 
 (langsamer als `SRT.EXE`) 
 
@@ -274,16 +272,18 @@ $$i > i+1$$.
 
 Sortiert einen Datenvektor
 
-     n_max= 33000, max 8-Stellen. 
+$$n_{max}= 33000,$$
 
-Sehr schnelle Berechnung durch Umsetzung der C-eigenen 'Qsort' Funktion.
+max 8-Stellen. 
+
+Sehr schnelle Berechnung durch Umsetzung der C-eigenen `Qsort` Funktion.
 
 - Übernahme einer einspaltigen ASCII Datenvektordatei. 
 - Ausgabe einer sortierten einspaltigen ASCII Datenvektordatei. 
 
 ## V2V
 
-Fügt 2 einspaltige ASCII Dateien aneinander (n1=n2 wird vorausgesetzt).
+Fügt 2 einspaltige ASCII Dateien aneinander ($n_1=n_2$ wird vorausgesetzt).
 
 - Übernahme von 2 einspaltigen ASCII Dateien. 
 - Ausgabe einer zweispaltigen ASCII Datei.
