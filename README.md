@@ -1,11 +1,11 @@
 # ConsoleApp_Matrix
-Console applications for matrix calculation and tools (German):
+Console applications for matrix *calculation* and *tools* (German):
 
 ## AMA
 
 Addiert oder subtrahiert 2 Matrizen
 
-     k1=k2, n1=n2 
+$$k_1=k_2, n_1=n_2$$
 
 wird vorausgesetzt.
 
@@ -14,13 +14,13 @@ wird vorausgesetzt.
   
 ## IMA
 
-Berechnet die inverse 1/A von A über die verkettete Form 
+Berechnet die inverse $A^{-1}$ von $A$ über die verkettete Form 
 des Gaussschen Algorithmus 
 
-     k_max=n_max= 200,a11<>0.
+$$k_{max}=n_{max}= 200,a_{11}\ne0$$.
 
-Es resultieren 2 Dreiecksmatrizen B und C, sowie die Matrix T 
-zur erzeugten Einheitsmatrix E, 1/A entsteht transponiert:
+Es resultieren 2 Dreiecksmatrizen $B$ und $C$, sowie die Matrix $T$ 
+zur erzeugten Einheitsmatrix $E$, $A^{-1}$ entsteht transponiert:
 
     . . .  A  1 0 0 E
     . . .     0 1 0
@@ -41,10 +41,10 @@ zur erzeugten Einheitsmatrix E, 1/A entsteht transponiert:
   
 ## MMA
 
-Multipliziert 2 Matrizen (k1=n2 wird vorausgesetzt).
+Multipliziert 2 Matrizen ($k_1=n_2$ wird vorausgesetzt).
 Es resultiert eine Matrix mit 
 
-     n=n1 und k=k2,   
+$$n=n_1,k=k_2,$$
 
            *          =
      o . .   o o         o o
@@ -87,7 +87,7 @@ Selegiert eine Sub Matrix (oder einen Vektor) aus einer Matrix.
 
 ## SPUR
 
-Berechnet die Spur (sp) einer quadratischen Matrix A:
+Berechnet die Spur (*sp*) einer quadratischen Matrix $A$:
 
      o . .  A
      . o .  
@@ -95,13 +95,13 @@ Berechnet die Spur (sp) einer quadratischen Matrix A:
           sp A
 
 - Übernahme einer quadratischen ASCII Matrixdatei. 
-- Ausgabe von sp A in die Datei 'SPUR.txt'.
+- Ausgabe von *sp* $A$ in die Datei `SPUR.txt`.
 
 ## TRP
 
 Transponiert eine Datenmatrix 
 
-     n_max= k_max= 1299. 
+$$n_{max}= k_{max}= 1299$$. 
 
 Spaltentrennzeichen, Eingabedatei: Tabulator oder Leerzeichen.
 Spaltentrennzeichen, Ausgabedatei: 1 Leerzeichen.
@@ -112,11 +112,11 @@ Spaltentrennzeichen, Ausgabedatei: 1 Leerzeichen.
 ## VMA
 
 Berechnet die verkettete Form des Gaussschen Algorithmus 
-einer quadratischen Matrix A 
+einer quadratischen Matrix $A$, mit 
 
-     k_max=n_max= 250,a11<>0.
+$$k_{max}=n_{max}= 250,a_{11}\ne0$$.
 
-Es resultieren 2 Dreiecksmatrizen B und C:
+Es resultieren 2 Dreiecksmatrizen $B$ und $C$:
 
      . . .  A
      . . .  
@@ -128,7 +128,7 @@ Es resultieren 2 Dreiecksmatrizen B und C:
      .      C
      ..
 
-Die Determinante von A (det A) ist das Produkt der Elemente in der Hauptdiagonale von B (TT bii).
+Die Determinante von $A$ (*det* $A)$ ist das Produkt der Elemente in der Hauptdiagonale von $B$ (*TT* $b_{ii}$).
 
 - Übernahme einer quadratischen ASCII Matrixdatei. 
 - Ausgabe einer quadratischen ASCII Matrixdatei.
