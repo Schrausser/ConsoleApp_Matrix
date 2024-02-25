@@ -294,11 +294,11 @@ $x_{min}$ .. Vektor Minimalwert
 $x_{max}$ .. Vektor Maximalwert  
 
 - Übernahme einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei. 
--
-
-      Den an das Ziel-Koordinatensystem angepassten Datenvektor. 
-      Den ursprünglichen Datenvektor. 
-
+- Ausgabe einer zweispaltigen, aufsteigend geordneten ASCII Datenmatrixdatei beinhaltend: 
+~~~
+Den an das Ziel-Koordinatensystem angepassten Datenvektor. 
+Den ursprünglichen Datenvektor. 
+~~~
 Handhabung
 ~~~
 KTF3 [input] [output] [minx] [maxx] [inv]
