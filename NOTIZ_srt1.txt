@@ -1,0 +1,21 @@
+SRT1 by Dietmar SCHRAUSSER 2011
+
+Allgemein
+---------
+SRT1.EXE verkettet 2 sortierte Datenvektoren (Filestream Verarbeitung, n_max -> oo). 
+
+Arbeitsweise
+------------
+1# Übernahme von zwei aufsteigend sortierten einspaltigen ASCII Datenvektordateien. 
+
+2# Ausgabe einer sortierten einspaltigen ASCII Datenvektordatei. 
+
+Handhabung
+----------
+SRT0 [input1] [input2] [output] 
+[input1] ... Eingabe Datei 1
+[input2] ... Eingabe Datei 2
+[output] .. Ausgabe Datei 
+
+
+bsp: SRT1 in1.asc in2.asc out.asc 
