@@ -11,13 +11,13 @@ o .   . .      o .
 
 Arbeitsweise
 ------------
-1# Übernahme einer quadratischen ASCII Matrixdateien. 
+1# Ãœbernahme einer quadratischen ASCII Matrixdateien. 
 
 2# Ausgabe einer quadratischen ASCII Matrixdatei.
   
 Handhabung
 ----------
-MMA [matrix] [matrix] [output] 
+QMA [matrix] [matrix] [output] 
 [matrix] ... Eingabe Datei 
 [output] ... Ausgabe Datei
 
