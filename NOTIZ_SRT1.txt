@@ -15,7 +15,7 @@ Handhabung
 SRT1 [input1] [input2] [output] 
 [input1] ... Eingabe Datei 1
 [input2] ... Eingabe Datei 2
-[output] .. Ausgabe Datei 
+[output] ... Ausgabe Datei 
 
 
 bsp: SRT1 in1.asc in2.asc out.asc 
