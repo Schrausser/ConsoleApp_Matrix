@@ -164,7 +164,7 @@ Spaltentrennzeichen, Ausgabedatei: 1 Leerzeichen.
 Handhabung
 ~~~
 TRP [input] [output] 
-[inpup] ... Eingabe Datei
+[inpup] .... Eingabe Datei
 [output] ... Ausgabe Datei
 ~~~
 
@@ -383,6 +383,14 @@ Filestream Verarbeitung, $n_{max} \rightarrow \infty$.
 
 - Übernahme von zwei aufsteigend sortierten einspaltigen ASCII Datenvektordateien. 
 - Ausgabe einer sortierten einspaltigen ASCII Datenvektordatei. 
+
+Handhabung
+~~~
+SRT1 [input1] [input2] [output] 
+[input1] ... Eingabe Datei 1
+[input2] ... Eingabe Datei 2
+[output] ... Ausgabe Datei 
+~~~
 
 ## SRT2
 
