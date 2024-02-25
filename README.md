@@ -165,15 +165,15 @@ Führt eine symmetrische entwobene Aufteilung einer Datenvektordatei *x0* durch:
 
 Verringert oder vergrössert den Umfang eines perfekt linearen Datenvektors. Die bis $n'$ iterative Datenanpassung erfolgt über 
 	
-$$x_i[n]= x_i[n+1]\frac{n}{n-1}; n'\ltn$$,
-$$x_i[n]= x_i[n-1]\frac{n-2}{n-1} ; n'\gtn$$.
+$$x_i[n]= x_i[n+1]\frac{n}{n-1}; n'\lt n,$$
+$$x_i[n]= x_i[n-1]\frac{n-2}{n-1} ; n'\gt n.$$
 
 - Übernahme einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang n. 
 - Ausgabe einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang n'. 
 
 ## KTF2
 
-Verringert oder vergrössert den Umfang eines Datenvektors (n_max= n'_max= 33000). 
+Verringert oder vergrössert den Umfang eines Datenvektors ($n_{max}= n'_{max}= 33000$). 
 
 - Übernahme einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang n. 
 - Ausgabe einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang n'.
@@ -183,17 +183,17 @@ Verringert oder vergrössert den Umfang eines Datenvektors (n_max= n'_max= 33000
 Passt einen Datenvektor an ein Ziel-Koordinatensystem an. 
 Die Datenanpassung erfolgt über
 	
-      x'[i] = minx+(((minx-x[min])-(minx-x[i]))*((maxx-minx)/((minx-x[min])-(minx-x[max])))),
+$$x'_i = minx+(((minx-x_{min})-(minx-x_i))*(\frac{maxx-minx/(minx-x_{min})-(minx-x_{max})})),$$
 
-bei einer Wertinvertierung errechnet man x''[i] über
+bei einer Wertinvertierung errechnet man $x''_i$ über
 	
-      x''[i] = (minx+maxx) - x'[i],
+$$x''_i = (minx+maxx) - x'_i,$$
 mit
 
-      minx  ... Wert des Minimalpunktes im Ziel-Koordinatensystem
-      maxx .... Wert des Maximalpunktes im Ziel-Koordinatensystem
-      x[min] .. Vektor Minimalwert
-      x[max] .. Vektor Maximalwert   
+$minx$  ... Wert des Minimalpunktes im Ziel-Koordinatensystem  
+$maxx$ .... Wert des Maximalpunktes im Ziel-Koordinatensystem  
+$x_{min}$ .. Vektor Minimalwert  
+$x_{max}$ .. Vektor Maximalwert  
 
 - Übernahme einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei. 
 - Ausgabe einer zweispaltigen, aufsteigend geordneten ASCII Datenmatrixdatei beinhaltend:
