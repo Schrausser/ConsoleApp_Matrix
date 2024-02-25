@@ -368,6 +368,14 @@ $$n_{max}= 33000,$$
 - Übernahme einer einspaltigen ASCII Datenvektordatei. 
 - Ausgabe einer sortierten einspaltigen ASCII Datenvektordatei. 
 
+Handhabung
+~~~
+SRT [input] [output] [[d]] 
+[input] ... Eingabe Datei 
+[output] .. Ausgabe Datei 
+[d] ....... optional 1: absteigende Sortierung 
+~~~
+
 ## SRT1
 
 Verkettet 2 sortierte Datenvektoren mit
@@ -395,6 +403,13 @@ $$i > i+1.$$
 - Übernahme einer einspaltigen ASCII Datenvektordatei. 
 - Ausgabe einer sortierten einspaltigen ASCII Datenvektordatei. 
 
+Handhabung
+~~~
+SRT2 [input] [output] [[d]] 
+[input] ... Eingabe Datei 
+[output] .. Ausgabe Datei 
+[d] ....... optional 1: absteigende Sortierung 
+~~~
 ## SRT3
 
 Sortiert einen Datenvektor
@@ -408,6 +423,14 @@ Sehr schnelle Berechnung durch Umsetzung der C-eigenen `Qsort` Funktion.
 - Übernahme einer einspaltigen ASCII Datenvektordatei. 
 - Ausgabe einer sortierten einspaltigen ASCII Datenvektordatei. 
 
+Handhabung
+~~~
+SRT3 [input] [output] [[d]] 
+[input] ... Eingabe Datei 
+[output] .. Ausgabe Datei 
+[d] ....... optional 1: absteigende Sortierung
+~~~
+
 ## V2V
 
 Fügt 2 einspaltige ASCII Dateien aneinander ($n_1=n_2$ wird vorausgesetzt).
@@ -415,9 +438,26 @@ Fügt 2 einspaltige ASCII Dateien aneinander ($n_1=n_2$ wird vorausgesetzt).
 - Übernahme von 2 einspaltigen ASCII Dateien. 
 - Ausgabe einer zweispaltigen ASCII Datei.
 
+Handhabung
+~~~
+V2V [input1] [input2] [output] [tab] 
+[input1] ... Eingabe Datei 1
+[input2] ... Eingabe Datei 2
+[output] ... Ausgabe Datei 
+[tab] ...... Spalten Trennzeichen (0):Tabulator (1):Leerzeichen (*):ein beliebiger String
+~~~
+
 ## Z2Z
 
 Fügt zwei ASCII Dateien aneinander.
 
 - Übernahme zweier ASCII Dateien. 
 - Ausgabe einer ASCII Datei.
+
+Handhabung
+~~~
+Z2Z [input1] [input2] [output] 
+[input1] ... Eingabe Datei 1
+[input2] ... Eingabe Datei 2
+[output] ... Ausgabe Datei
+~~~
