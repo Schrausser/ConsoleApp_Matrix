@@ -12,7 +12,7 @@ Arbeitsweise
 
 Handhabung
 ----------
-SRT0 [input1] [input2] [output] 
+SRT1 [input1] [input2] [output] 
 [input1] ... Eingabe Datei 1
 [input2] ... Eingabe Datei 2
 [output] .. Ausgabe Datei 
