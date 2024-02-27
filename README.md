@@ -1,5 +1,5 @@
 # ConsoleApp_Matrix
-Console applications for matrix *calculation* and *tools* (German):
+Console applications for matrix *calculation* and *tools* (German).
 
 ## AMA
 
@@ -39,7 +39,7 @@ zur erzeugten Einheitsmatrix $E$, $A^{-1}$ entsteht transponiert:
       . .     . . .
         .     . . .
     .      C
-    ..
+    . .
 
     . . . (1/A)'
     . . .
