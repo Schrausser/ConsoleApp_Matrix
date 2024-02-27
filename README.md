@@ -185,7 +185,7 @@ Es resultieren 2 Dreiecksmatrizen $B$ und $C$:
        . .
          .
      .      C
-     ..
+     . .
 
 Die Determinante von $A$ (*det* $A)$ ist das Produkt der Elemente in der Hauptdiagonale von $B$ (*TT* $b_{ii}$).
 
