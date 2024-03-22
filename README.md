@@ -23,13 +23,13 @@ AMA [matrix1] [matrix2] [output] [mode]
 
 ## IMA
 
-Berechnet die inverse $A^{-1}$ von $A$ über die verkettete Form 
+Berechnet die inverse $\mathbfit A ^{-1}$ von $\mathbfit A$ über die verkettete Form 
 des Gaussschen Algorithmus 
 
 $$k_{max}=n_{max}= 200,a_{11}\ne0.$$
 
-Es resultieren 2 Dreiecksmatrizen $B$ und $C$, sowie die Matrix $T$ 
-zur erzeugten Einheitsmatrix $E$, $A^{-1}$ entsteht transponiert:
+Es resultieren 2 Dreiecksmatrizen $\mathbfit B$ und $\mathbfit C$, sowie die Matrix $\mathbfit T$ 
+zur erzeugten Einheitsmatrix $\mathbfit E$, $\mathbfit A^{-1}$ entsteht transponiert:
 
     . . .  A  1 0 0 E
     . . .     0 1 0
@@ -128,7 +128,7 @@ SMA [matrix] [output] [i0] [i1] [j0] [j1]
 
 ## SPUR
 
-Berechnet die Spur (*sp*) einer quadratischen Matrix $A$:
+Berechnet die Spur (*sp*) einer quadratischen Matrix $\mathbfit A$:
 
      o . .  A
      . o .  
@@ -136,7 +136,7 @@ Berechnet die Spur (*sp*) einer quadratischen Matrix $A$:
           sp A
 
 - Übernahme einer quadratischen ASCII Matrixdatei. 
-- Ausgabe von *sp* $A$ in die Datei `SPUR.txt`.
+- Ausgabe von *sp* $\mathbfit A$ in die Datei `SPUR.txt`.
 
 Handhabung
 ~~~
@@ -144,7 +144,7 @@ SPUR [matrix] [mode]
 [matrix] ... Eingabe Datei
 [mode] ..... Art der Spurberechnung:
 (0): Addition der Diagonalelemente (Standard)
-(1): Multiplikation der Diagonalelemente (siehe Determinante, VMA.exe)
+(1): Multiplikation der Diagonalelemente (siehe Determinante, `VMA.exe`)
 (2): Subtraktion der Diagonalelemente
 (3): Division der Diagonalelemente
 ~~~
@@ -171,11 +171,11 @@ TRP [input] [output]
 ## VMA
 
 Berechnet die verkettete Form des Gaussschen Algorithmus 
-einer quadratischen Matrix $A$, mit 
+einer quadratischen Matrix $\mathbfit A$, mit 
 
 $$k_{max}=n_{max}= 250,a_{11}\ne0.$$
 
-Es resultieren 2 Dreiecksmatrizen $B$ und $C$:
+Es resultieren 2 Dreiecksmatrizen $\mathbfit B$ und $\mathbfit C$:
 
      . . .  A
      . . .  
@@ -187,7 +187,7 @@ Es resultieren 2 Dreiecksmatrizen $B$ und $C$:
      .      C
      . .
 
-Die Determinante von $A$ (*det* $A)$ ist das Produkt der Elemente in der Hauptdiagonale von $B$ (*TT* $b_{ii}$).
+Die Determinante von $\mathbfit A$ (*det* $A)$ ist das Produkt der Elemente in der Hauptdiagonale von $\mathbfit B$ (*TT* $b_{ii}$).
 
 - Übernahme einer quadratischen ASCII Matrixdatei. 
 - Ausgabe einer quadratischen ASCII Matrixdatei.
@@ -216,7 +216,7 @@ ZMA [matrix] [output] [wert}
 
 ## ENT
 
-Führt eine symmetrische entwobene Aufteilung einer Datenvektordatei $x_0$ durch:
+Führt eine symmetrische entwobene Aufteilung einer Datenvektordatei $\mathbfit x_0$ durch:
 
      x0
      --
