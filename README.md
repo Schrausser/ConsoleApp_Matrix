@@ -187,7 +187,7 @@ Es resultieren 2 Dreiecksmatrizen $\mathbfit B$ und $\mathbfit C$:
      .      C
      . .
 
-Die Determinante von $\mathbfit A$ (*det* $A)$ ist das Produkt der Elemente in der Hauptdiagonale von $\mathbfit B$ (*TT* $b_{ii}$).
+Die Determinante von $\mathbfit A$ (det $\mathbfit A)$ ist das Produkt der Elemente in der Hauptdiagonale von $\mathbfit B$ (*TT* $b_{ii}$).
 
 - Übernahme einer quadratischen ASCII Matrixdatei. 
 - Ausgabe einer quadratischen ASCII Matrixdatei.
