@@ -216,7 +216,7 @@ ZMA [matrix] [output] [wert}
 
 ## ENT
 
-Führt eine symmetrische entwobene Aufteilung einer Datenvektordatei *x0* durch:
+Führt eine symmetrische entwobene Aufteilung einer Datenvektordatei $x_0$ durch:
 
      x0
      --
@@ -424,7 +424,7 @@ Sortiert einen Datenvektor
 
 $$n_{max}= 33000,$$
 
-max 8-Stellen. 
+max. 8-Stellen. 
 
 Sehr schnelle Berechnung durch Umsetzung der C-eigenen `Qsort` Funktion.
 
