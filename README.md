@@ -314,7 +314,7 @@ KTF3 [input] [output] [minx] [maxx] [inv]
 Erzeugt einen aufsteigend geordneten linearen Datenvektor und passt diesen an ein Ziel-Koordinatensystem an. 
 Die Datenanpassung erfolgt über
 
-$$x_i'=min_x+\\{[(min_x-x_{min})-(min_x-x_i)]⋅\frac{max_x-min_x}{(min_x-x_{min})-(min_x-x_{max})}\\}$$
+$$x_i'=min_x+\Biggl{\\{}[(min_x-x_{min})-(min_x-x_i)]⋅\frac{max_x-min_x}{(min_x-x_{min})-(min_x-x_{max})}\Biggr{\\}}$$
 
 bei einer Wertinvertierung errechnet man $x_i''$ über
 	
