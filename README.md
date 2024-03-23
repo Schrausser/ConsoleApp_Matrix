@@ -247,8 +247,8 @@ ENT [input] [output1] [output2]
 
 Verringert oder vergrössert den Umfang eines perfekt linearen Datenvektors. Die bis $n'$ iterative Datenanpassung erfolgt über 
 	
-$$x_i[n]= x_i[n+1]\frac{n}{n-1}; n'\lt n,$$
-$$x_i[n]= x_i[n-1]\frac{n-2}{n-1} ; n'\gt n.$$
+$$x_i[n]= x_i[n+1]⋅\frac{n}{n-1}; n'\lt n,$$
+$$x_i[n]= x_i[n-1]⋅\frac{n-2}{n-1} ; n'\gt n.$$
 
 - Übernahme einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang $n$. 
 - Ausgabe einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang $n'$.
@@ -281,7 +281,7 @@ KTF2 [input] [output] [n]
 Passt einen Datenvektor an ein Ziel-Koordinatensystem an. 
 Die Datenanpassung erfolgt über
 	
-$$x_i'=min_x+《[(min_x-x_{min})-(min_x-x_i)]\frac{max_x-min_x}{(min_x-x_{min})-(min_x-x_{max})}》$$
+$$x_i'=min_x+《[(min_x-x_{min})-(min_x-x_i)]⋅\frac{max_x-min_x}{(min_x-x_{min})-(min_x-x_{max})}》$$
 
 bei einer Wertinvertierung errechnet man $x''_i$ über
 	
@@ -314,7 +314,7 @@ KTF3 [input] [output] [minx] [maxx] [inv]
 Erzeugt einen aufsteigend geordneten linearen Datenvektor und passt diesen an ein Ziel-Koordinatensystem an. 
 Die Datenanpassung erfolgt über
 
-$$x_i'=min_x+《[(min_x-x_{min})-(min_x-x_i)]\frac{max_x-min_x}{(min_x-x_{min})-(min_x-x_{max})}》$$
+$$x_i'=min_x+《[(min_x-x_{min})-(min_x-x_i)]⋅\frac{max_x-min_x}{(min_x-x_{min})-(min_x-x_{max})}》$$
 
 bei einer Wertinvertierung errechnet man $x_i''$ über
 	
