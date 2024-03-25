@@ -144,7 +144,7 @@ SPUR [matrix] [mode]
 [matrix] ... Eingabe Datei
 [mode] ..... Art der Spurberechnung:
 (0): Addition der Diagonalelemente (Standard)
-(1): Multiplikation der Diagonalelemente (siehe Determinante, `VMA.exe`)
+(1): Multiplikation der Diagonalelemente (siehe Determinante, VMA.exe)
 (2): Subtraktion der Diagonalelemente
 (3): Division der Diagonalelemente
 ~~~
