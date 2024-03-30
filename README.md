@@ -255,7 +255,7 @@ $$x_i[n]= x_i[n-1]⋅\frac{n-2}{n-1} ; n'\gt n.$$
 
 Handhabung
 ~~~
-KTF [input] [output] [n] 
+ktf [input] [output] [n] 
 [input] ... Eingabe Datei 
 [output] .. Ausgabe Datei 
 [n] ....... Vektorumfang n'
@@ -270,7 +270,7 @@ Verringert oder vergrössert den Umfang eines Datenvektors ($n_{max}= n'_{max}= 
 
 Handhabung
 ~~~
-KTF2 [input] [output] [n] 
+ktf2 [input] [output] [n] 
 [input] ... Eingabe Datei 
 [output] .. Ausgabe Datei 
 [n] ....... Vektorumfang n' 
@@ -301,7 +301,7 @@ Den ursprünglichen Datenvektor.
 ~~~
 Handhabung
 ~~~
-KTF3 [input] [output] [minx] [maxx] [inv]
+ktf3 [input] [output] [minx] [maxx] [inv]
 [input] ... Eingabe Datei 
 [output] .. Ausgabe Datei 
 [minx] .... Wert des Minimalpunktes im Ziel-Koordinatensystem
@@ -330,7 +330,7 @@ $x_{max}$ .. Vektor Maximalwert
 
 Handhabung
 ~~~
-NTF [output] [minn] [maxn] [min] [max] [inv]
+ntf [output] [minn] [maxn] [min] [max] [inv]
 [output] ........................... Ausgabe Datei
 [minn] ............................. n Minimalwert
 [minn] ............................. n Maximalwert
@@ -370,7 +370,7 @@ $$n_{max}= 33000,$$
 
 Handhabung
 ~~~
-SRT [input] [output] [[d]] 
+srt [input] [output] [[d]] 
 [input] ... Eingabe Datei 
 [output] .. Ausgabe Datei 
 [d] ....... optional 1: absteigende Sortierung 
@@ -386,7 +386,7 @@ Filestream Verarbeitung, $n_{max} \rightarrow \infty$.
 
 Handhabung
 ~~~
-SRT1 [input1] [input2] [output] 
+srt1 [input1] [input2] [output] 
 [input1] ... Eingabe Datei 1
 [input2] ... Eingabe Datei 2
 [output] ... Ausgabe Datei 
@@ -413,7 +413,7 @@ $$i > i+1.$$
 
 Handhabung
 ~~~
-SRT2 [input] [output] [[d]] 
+srt2 [input] [output] [[d]] 
 [input] ... Eingabe Datei 
 [output] .. Ausgabe Datei 
 [d] ....... optional 1: absteigende Sortierung 
@@ -433,7 +433,7 @@ Sehr schnelle Berechnung durch Umsetzung der C-eigenen `Qsort` Funktion.
 
 Handhabung
 ~~~
-SRT3 [input] [output] [[d]] 
+srt3 [input] [output] [[d]] 
 [input] ... Eingabe Datei 
 [output] .. Ausgabe Datei 
 [d] ....... optional 1: absteigende Sortierung
