@@ -350,7 +350,7 @@ $$n_{max}= 33000.$$
 
 Handhabung
 ~~~
-SEL [input] [output] [a] [k] 
+sel [input] [output] [a] [k] 
 [input] ... Eingabe Datei 
 [output] .. Ausgabe Datei 
 [a] ....... Vektornummer 
