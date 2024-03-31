@@ -305,7 +305,7 @@ ktf3 [input] [output] [minx] [maxx] [inv]
 [input] ... Eingabe Datei 
 [output] .. Ausgabe Datei 
 [minx] .... Wert des Minimalpunktes im Ziel-Koordinatensystem
-{maxx] .... Wert des Maximalpunktes im Ziel-Koordinatensystem
+[maxx] .... Wert des Maximalpunktes im Ziel-Koordinatensystem
 [inv] ..... 1: Wertinvertierung 0: Keine Wertinvertierung
 ~~~
 
