@@ -3,11 +3,11 @@ KTF3 by Dietmar SCHRAUSSER 2009
 Allgemein
 ---------
 KTF3.EXE passt einen Datenvektor an ein Ziel-Koordinatensystem an. 
-Die Datenanpassung erfolgt über
+Die Datenanpassung erfolgt Ã¼ber
 	
  	x'[i] = minx+(((minx-x[min])-(minx-x[i]))*((maxx-minx)/((minx-x[min])-(minx-x[max])))),
 
-bei einer Wertinvertierung errechnet man x''[i] über
+bei einer Wertinvertierung errechnet man x''[i] Ã¼ber
 	
 	x''[i] = (minx+maxx) - x'[i],
 wobei
@@ -20,12 +20,12 @@ Dargestellt in "Kurventransformation03.xls".
 
 Arbeitsweise
 ------------
-1# Übernahme einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei. 
+1# Ãœbernahme einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei. 
 
 2# Ausgabe einer zweispaltigen, aufsteigend geordneten ASCII Datenmatrixdatei beinhaltend:
   
  (1) Den an das Ziel-Koordinatensystem angepassten Datenvektor.
- (2) Den ursprünglichen Datenvektor. 
+ (2) Den ursprÃ¼nglichen Datenvektor. 
 
 Handhabung
 ----------
@@ -33,7 +33,7 @@ KTF3 [input] [output] [minx] [maxx] [inv]
 [input] ... Eingabe Datei 
 [output] .. Ausgabe Datei 
 [minx] .... Wert des Minimalpunktes im Ziel-Koordinatensystem
-{maxx] .... Wert des Maximalpunktes im Ziel-Koordinatensystem
+[maxx] .... Wert des Maximalpunktes im Ziel-Koordinatensystem
 [inv] ..... 1: Wertinvertierung 0: Keine Wertinvertierung 
 
 bsp: KTF3 data_in.txt data_out.txt 1 100 1
