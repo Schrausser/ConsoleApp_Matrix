@@ -1,5 +1,5 @@
 # ConsoleApp_Matrix
-Console applications for matrix *calculation* and *tools* (German).
+Console applications for matrix *calculation* and *tools* (German), c.f. Meyberg & Vachenauer (2001), Karpfinger (2022) or Gentle (2024).
 
 ## AMA
 
@@ -469,3 +469,10 @@ Z2Z [input1] [input2] [output]
 [input2] ... Eingabe Datei 2
 [output] ... Ausgabe Datei
 ~~~
+## References
+
+Gentle, J. E. (2024). *Matrix Algebra: Theory, Computations and Applications in Statistics*. Springer Texts in Statistics. Springer. https://doi.org/10.1007/978-3-031-42144-0.
+
+Karpfinger, C. (2022). Calculating with Matrices. In *Calculus and Linear Algebra in Recipes: Terms, Phrases and Numerous Examples in Short Learning Units*, 87–100. Berlin, Heidelberg: Springer Berlin Heidelberg. https://doi.org/10.1007/978-3-662-65458-3_10.
+
+Meyberg, K., & Vachenauer, P. (2001). *Höhere Mathematik 1*. Springer-Lehrbuch. Springer, Berlin, Heidelberg. https://doi.org/10.1007/978-3-642-56654-7.
