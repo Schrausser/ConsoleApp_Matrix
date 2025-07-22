@@ -1,6 +1,6 @@
 # ConsoleApp_Matrix
 
-Console applications for matrix *calculation* and *tools* (German), c.f. Meyberg & Vachenauer ([2001](https://doi.org/10.1007/978-3-642-56654-7)), Karpfinger ([2022](https://doi.org/10.1007/978-3-662-65458-3_10)) or Gentle ([2024](https://doi.org/10.1007/978-3-031-42144-0)).
+Console applications for matrix *calculation* and *tools* (German), c.f. Meyberg and Vachenauer ([2001](https://doi.org/10.1007/978-3-642-56654-7)), Karpfinger ([2022](https://doi.org/10.1007/978-3-662-65458-3_10)) or Gentle ([2024](https://doi.org/10.1007/978-3-031-42144-0)).
 
 ## AMA
 
