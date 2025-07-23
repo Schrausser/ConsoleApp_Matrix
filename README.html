@@ -1,0 +1,421 @@
+<html> 
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="Author" content="Dietmar Gerald Schrausser">
+
+<title>
+ConsoleApp_Matrix/README
+</title>
+
+</head> 
+<body style="font-family:calibri;font-size:85%;background-color:#eceff1;color:#37474f">
+
+<style>
+a {color: #78909c; }
+a:visited {color: #78909c;}
+</style>
+<h1 id="consoleapp_matrix">ConsoleApp_Matrix</h1>
+<p>Console applications for matrix <em>calculation</em> and <em>tools</em> (German), c.f. Meyberg and Vachenauer (<a href="https://doi.org/10.1007/978-3-642-56654-7">2001</a>), Karpfinger (<a href="https://doi.org/10.1007/978-3-662-65458-3_10">2022</a>) or Gentle (<a href="https://doi.org/10.1007/978-3-031-42144-0">2024</a>).</p>
+<h2 id="ama">AMA</h2>
+<p>Addiert oder subtrahiert 2 Matrizen</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>k</mi><mn>1</mn></msub><mo>=</mo><msub><mi>k</mi><mn>2</mn></msub><mtext>&nbsp;und&nbsp;</mtext><msub><mi>n</mi><mn>1</mn></msub><mo>=</mo><msub><mi>n</mi><mn>2</mn></msub></math></p>
+<p>wird vorausgesetzt.</p>
+<ul>
+<li>Übernahme 2er ASCII Matrixdateien.</li>
+<li>Ausgabe einer ASCII Matrixdatei.</li>
+</ul>
+<p>Handhabung</p>
+<pre><code>AMA [matrix1] [matrix2] [output] [mode] 
+[matrix1] ... Eingabe Datei 1
+[matrix2] ... Eingabe Datei 2
+[output]  ... Ausgabe Datei
+[mode] ...... (0):Addition (1):Subtraktion
+</code></pre>
+<h2 id="ima">IMA</h2>
+<p>Berechnet die inverse <math display="inline"><msup><mrow data-mjx-texclass="ORD"><mi mathvariant="bold-italic">A</mi></mrow><mrow data-mjx-texclass="ORD"><mo>&minus;</mo><mn>1</mn></mrow></msup></math>
+ von <math display="inline"><mrow data-mjx-texclass="ORD"><mi mathvariant="bold-italic">A</mi></mrow></math> über die verkettete Form
+des Gaussschen Algorithmus</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>k</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><msub><mi>n</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><mn>200</mn><mo>,</mo><msub><mi>a</mi><mrow data-mjx-texclass="ORD"><mn>11</mn></mrow></msub><mo>≠</mo><mn>0.</mn></math></p>
+<p>Es resultieren 2 Dreiecksmatrizen <math display="inline"><mrow data-mjx-texclass="ORD"><mi mathvariant="bold-italic"><math display="inline"><mrow data-mjx-texclass="ORD"><mi mathvariant="bold-italic">C</mi></mrow></math>, sowie die Matrix <math display="inline"><mrow data-mjx-texclass="ORD"><mi mathvariant="bold-italic">T</mi></mrow></math>
+zur erzeugten Einheitsmatrix <math display="inline"><mrow data-mjx-texclass="ORD"><mi mathvariant="bold-italic">E</mi></mrow></math>, <math display="inline"><msup><mrow data-mjx-texclass="ORD"><mi mathvariant="bold-italic">A</mi></mrow><mrow data-mjx-texclass="ORD"><mo>&minus;</mo><mn>1</mn></mrow></msup></math>
+ entsteht transponiert:</p>
+<pre><code>. . .  A  1 0 0 E
+. . .     0 1 0
+. . .     0 0 1
+
+. . .  B  . . . T
+  . .     . . .
+    .     . . .
+.      C
+. .
+
+. . . (1/A)'
+. . .
+. . .
+</code></pre>
+<ul>
+<li>Übernahme einer quadratischen ASCII Matrixdatei.</li>
+<li>Ausgabe einer quadratischen ASCII Matrixdatei.</li>
+</ul>
+<p>Handhabung</p>
+<pre><code>IMA [matrix] [output] 
+[matrix] ... Eingabe Datei
+[output] ... Ausgabe Datei
+</code></pre>
+<h2 id="mma">MMA</h2>
+<p>Multipliziert 2 Matrizen (<math display="inline"><mrow data-mjx-texclass="ORD"><mi mathvariant="bold-italic">A</mi><mo mathvariant="bold-italic">=</mo><mo mathvariant="bold-italic" stretchy="false">(</mo><mi mathvariant="bold-italic">b</mi><mrow data-mjx-texclass="ORD"><mo mathvariant="bold-italic" stretchy="false">|</mo></mrow><mi mathvariant="bold-italic">c</mi><mrow data-mjx-texclass="ORD"><mo mathvariant="bold-italic" stretchy="false">|</mo></mrow><mi mathvariant="bold-italic">d</mi><mo mathvariant="bold-italic" stretchy="false">)</mo></mrow></math> wird vorausgesetzt).
+Es resultiert eine Matrix mit</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>n</mi><mo>=</mo><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><mtext>&nbsp;</mtext><mi>k</mi><mo>=</mo><msub><mi>k</mi><mn>2</mn></msub><mo>:</mo></math></p>
+<pre><code>       *          =
+ o . .   o o         o o
+ o . .   . .         o .
+         . .
+ 
+ 
+ o . .   o o         o o
+ o . .   . .         o .
+ o . .   . .         o .    
+ o . .               o .
+ o . .               o .
+ 
+ 
+ o . .   o o o o o   o o o o o 
+ o . .   . . . . .   o . . . . 
+         . . . . .
+</code></pre>
+<ul>
+<li>Übernahme 2er ASCII Matrixdateien.</li>
+<li>Ausgabe einer ASCII Matrixdatei.</li>
+</ul>
+<p>Handhabung</p>
+<pre><code>MMA [matrix1] [matrix2] [output] 
+[matrix1] ... Eingabe Datei 1
+[matrix2] ... Eingabe Datei 2
+[output]  ... Ausgabe Datei
+</code></pre>
+<h2 id="qma">QMA</h2>
+<p>Quadriert eine quadratische Matrix:</p>
+<pre><code>     *       =
+ o .   o o      o o
+ o .   . .      o .
+</code></pre>
+<ul>
+<li>Übernahme einer quadratischen ASCII Matrixdateien.</li>
+<li>Ausgabe einer quadratischen ASCII Matrixdatei.</li>
+</ul>
+<p>Handhabung</p>
+<pre><code>QMA [matrix] [matrix] [output] 
+[matrix] ... Eingabe Datei 
+[output] ... Ausgabe Datei
+</code></pre>
+<h2 id="sma">SMA</h2>
+<p>Selegiert eine Sub Matrix (oder einen Vektor) aus einer Matrix.</p>
+<ul>
+<li>Übernahme einer ASCII Matrixdatei.</li>
+<li>Ausgabe einer ASCII (Matrix-)Datei.</li>
+</ul>
+<p>Handhabung</p>
+<pre><code>SMA [matrix] [output] [i0] [i1] [j0] [j1]
+[matrix] ................. Matrix Datei
+[output] ................. Matrix Ausgabe Datei
+[i0] ..................... von Zeile
+[i1] ..................... bis Zeile
+[j0] ..................... von Spalte
+[j1] ..................... bis Spalte
+</code></pre>
+<h2 id="spur">SPUR</h2>
+<p>Berechnet die Spur (<em>sp</em>) einer quadratischen Matrix <math display="inline"><mrow data-mjx-texclass="ORD"><mi mathvariant="bold-italic">A</mi></mrow></math>:</p>
+<pre><code> o . .  A
+ . o .  
+ . . o
+      sp A
+</code></pre>
+<ul>
+<li>Übernahme einer quadratischen ASCII Matrixdatei.</li>
+<li>Ausgabe von <em>sp</em> <math display="inline"><mrow data-mjx-texclass="ORD"><mi mathvariant="bold-italic">A</mi></mrow></math> in die Datei <code>SPUR.txt</code>.</li>
+</ul>
+<p>Handhabung</p>
+<pre><code>SPUR [matrix] [mode] 
+[matrix] ... Eingabe Datei
+[mode] ..... Art der Spurberechnung:
+(0): Addition der Diagonalelemente (Standard)
+(1): Multiplikation der Diagonalelemente (siehe Determinante, VMA.exe)
+(2): Subtraktion der Diagonalelemente
+(3): Division der Diagonalelemente
+</code></pre>
+<h2 id="trp">TRP</h2>
+<p>Transponiert eine Datenmatrix</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>n</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><msub><mi>k</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><mn>1299.</mn></math></p>
+<p>Spaltentrennzeichen, Eingabedatei: Tabulator oder Leerzeichen.
+Spaltentrennzeichen, Ausgabedatei: 1 Leerzeichen.</p>
+<ul>
+<li>Übernahme einer ASCII Datenmatrixdatei.</li>
+<li>Ausgabe einer transponierten ASCII Datenmatrixdatei.</li>
+</ul>
+<p>Handhabung</p>
+<pre><code>TRP [input] [output] 
+[inpup] .... Eingabe Datei
+[output] ... Ausgabe Datei
+</code></pre>
+<h2 id="vma">VMA</h2>
+<p>Berechnet die verkettete Form des Gaussschen Algorithmus
+einer quadratischen Matrix <math display="inline"><mrow data-mjx-texclass="ORD"><mi mathvariant="bold-italic">A</mi></mrow></math>, mit</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>k</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><msub><mi>n</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><mn>250</mn><mo>,</mo><msub><mi>a</mi><mrow data-mjx-texclass="ORD"><mn>11</mn></mrow></msub><mo>≠</mo><mn>0.</mn></math></p>
+<p>Es resultieren 2 Dreiecksmatrizen <math display="inline"><mrow data-mjx-texclass="ORD"><mi mathvariant="bold-italic">B</mi></mrow></math> und <math display="inline"><mrow data-mjx-texclass="ORD"><mi mathvariant="bold-italic">C</mi></mrow></math>:</p>
+<pre><code> . . .  A
+ . . .  
+ . . .
+
+ . . .  B
+   . .
+     .
+ .      C
+ . .
+</code></pre>
+<p>Die Determinante von <math display="inline"><mrow data-mjx-texclass="ORD"><mi mathvariant="bold-italic">A</mi></mrow></math> (det <math display="inline"><mrow data-mjx-texclass="ORD"><mi mathvariant="bold-italic">A</mi></mrow></math>) ist das Produkt der Elemente in der Hauptdiagonale von <math display="inline"><mrow data-mjx-texclass="ORD"><mi mathvariant="bold-italic">B</mi></mrow></math> (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow data-mjx-texclass="ORD"><mi mathvariant="bold-italic">TT</mi></mrow><msub><mi>b</mi><mrow data-mjx-texclass="ORD"><mi>i</mi><mi>i</mi></mrow></msub></math>).</p>
+<ul>
+<li>Übernahme einer quadratischen ASCII Matrixdatei.</li>
+<li>Ausgabe einer quadratischen ASCII Matrixdatei.</li>
+</ul>
+<p>Handhabung</p>
+<pre><code>VMA [matrix] [output] 
+[matrix] ... Eingabe Datei
+[output] ... Ausgabe Datei
+</code></pre>
+<h2 id="zma">ZMA</h2>
+<p>Multipliziert eine Matrix mit einer reellen Zahl.</p>
+<ul>
+<li>Übernahme einer ASCII Matrixdatei.</li>
+<li>Ausgabe einer ASCII Matrixdatei.</li>
+</ul>
+<p>Handhabung</p>
+<pre><code>ZMA [matrix] [output] [wert} 
+[matrix] ... Eingabe Datei
+[output] ... Ausgabe Datei
+[wert] ..... Reelle Zahl
+</code></pre>
+<h2 id="ent">ENT</h2>
+<p>Führt eine symmetrische entwobene Aufteilung einer Datenvektordatei <math display="inline"><msub><mrow data-mjx-texclass="ORD"><mi mathvariant="bold-italic">x</mi></mrow><mn>0</mn></msub></math> durch:</p>
+<pre><code> x0
+ --
+ 1
+ 2	
+ 3
+ 4
+
+ x1 x2
+ -- -- 
+ 1
+    2
+ 3 
+    4 
+</code></pre>
+<ul>
+<li>Übernahme einer einspaltigen ASCII Datei.</li>
+<li>Ausgabe von 2 einspaltigen ASCII Dateien.</li>
+</ul>
+<p>Handhabung</p>
+<pre><code>ENT [input] [output1] [output2]
+[input] ..... Eingabe Datei
+[output1] ... Ausgabe Datei 1
+[output2] ... Ausgabe Datei 2 
+</code></pre>
+<h2 id="ktf">KTF</h2>
+<p>Verringert oder vergrössert den Umfang eines perfekt linearen Datenvektors. Die bis <math display="inline"><msup><mi>n</mi><mo data-mjx-alternate="1">′</mo></msup></math> iterative Datenanpassung erfolgt über</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">[</mo><mi>n</mi><mo stretchy="false">]</mo><mo>=</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">[</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">]</mo><mo>&middot;</mo><mfrac><mi>n</mi><mrow><mi>n</mi><mo>&minus;</mo><mn>1</mn></mrow></mfrac><mo>;</mo><msup><mi>n</mi><mo data-mjx-alternate="1">′</mo></msup><mo>&lt;</mo><mi>n</mi><mo>,</mo></math>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">[</mo><mi>n</mi><mo stretchy="false">]</mo><mo>=</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">[</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">]</mo><mo>⋅</mo><mfrac><mrow><mi>n</mi><mo>&minus;</mo><mn>2</mn></mrow><mrow><mi>n</mi><mo>&minus;</mo><mn>1</mn></mrow></mfrac><mo>;</mo><msup><mi>n</mi><mo data-mjx-alternate="1">′</mo></msup><mo>&gt;</mo><mi>n</mi><mo>.</mo></math></p>
+<ul>
+<li>Übernahme einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang <math display="inline"><mi>n</mi></math>.</li>
+<li>Ausgabe einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang <math display="inline"><msup><mi>n</mi><mo data-mjx-alternate="1">′</mo></msup></math>.</li>
+</ul>
+<p>Handhabung</p>
+<pre><code>ktf [input] [output] [n] 
+[input] ... Eingabe Datei 
+[output] .. Ausgabe Datei 
+[n] ....... Vektorumfang n'
+</code></pre>
+<h2 id="ktf2">KTF2</h2>
+<p>Verringert oder vergrössert den Umfang eines Datenvektors (<math display="inline"><msub><mi>n</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><msubsup><mi>n</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>a</mi><mi>x</mi></mrow><mo data-mjx-alternate="1">′</mo></msubsup><mo>=</mo><mn>33000</mn></math>).</p>
+<ul>
+<li>Übernahme einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang <math display="inline"><mi>n</mi></math>.</li>
+<li>Ausgabe einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei im Umfang <math display="inline"><msup><mi>n</mi><mo data-mjx-alternate="1">′</mo></msup></math>.</li>
+</ul>
+<p>Handhabung</p>
+<pre><code>ktf2 [input] [output] [n] 
+[input] ... Eingabe Datei 
+[output] .. Ausgabe Datei 
+[n] ....... Vektorumfang n' 
+</code></pre>
+<h2 id="ktf3">KTF3</h2>
+<p>Passt einen Datenvektor an ein Ziel-Koordinatensystem an.
+Die Datenanpassung erfolgt über</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msubsup><mi>x</mi><mi>i</mi><mo data-mjx-alternate="1">′</mo></msubsup><mo>=</mo><mi>m</mi><mi>i</mi><msub><mi>n</mi><mi>x</mi></msub><mo>+</mo><mrow data-mjx-texclass="OPEN"><mo minsize="2.047em" maxsize="2.047em">{</mo></mrow><mrow data-mjx-texclass="OPEN"><mo minsize="1.2em" maxsize="1.2em">[</mo></mrow><mo stretchy="false">(</mo><mi>m</mi><mi>i</mi><msub><mi>n</mi><mi>x</mi></msub><mo>−</mo><msub><mi>x</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><mo stretchy="false">)</mo><mo>&minus;</mo><mo stretchy="false">(</mo><mi>m</mi><mi>i</mi><msub><mi>n</mi><mi>x</mi></msub><mo>&minus;</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo><mrow data-mjx-texclass="CLOSE"><mo minsize="1.2em" maxsize="1.2em">]</mo></mrow><mo>&middot;</mo><mfrac><mrow><mi>m</mi><mi>a</mi><msub><mi>x</mi><mi>x</mi></msub><mo>&minus;</mo><mi>m</mi><mi>i</mi><msub><mi>n</mi><mi>x</mi></msub></mrow><mrow><mo stretchy="false">(</mo><mi>m</mi><mi>i</mi><msub><mi>n</mi><mi>x</mi></msub><mo>−</mo><msub><mi>x</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><mo stretchy="false">)</mo><mo>&minus;</mo><mo stretchy="false">(</mo><mi>m</mi><mi>i</mi><msub><mi>n</mi><mi>x</mi></msub><mo>&minus;</mo><msub><mi>x</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo stretchy="false">)</mo></mrow></mfrac><mrow data-mjx-texclass="CLOSE"><mo minsize="2.047em" maxsize="2.047em">}</mo></mrow></math></p>
+<p>bei einer Wertinvertierung errechnet man <math display="inline"><msubsup><mi>x</mi><mi>i</mi><mo data-mjx-alternate="1">″</mo></msubsup></math> über</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msubsup><mi>x</mi><mi>i</mi><mo data-mjx-alternate="1">″</mo></msubsup><mo>=</mo><mo stretchy="false">(</mo><mi>m</mi><mi>i</mi><msub><mi>n</mi><mi>x</mi></msub><mo>+</mo><mi>m</mi><mi>a</mi><msub><mi>x</mi><mi>x</mi></msub><mo stretchy="false">)</mo><mo>&minus;</mo><msubsup><mi>x</mi><mi>i</mi><mo data-mjx-alternate="1">′</mo></msubsup><mo>,</mo></math>
+mit</p>
+<p><math display="inline"><mi>m</mi><mi>i</mi><msub><mi>n</mi><mi>x</mi></msub></math>  ... Wert des Minimalpunktes im Ziel-Koordinatensystem<br />
+<math display="inline"><mi>m</mi><mi>a</mi><msub><mi>x</mi><mi>x</mi></msub></math> .... Wert des Maximalpunktes im Ziel-Koordinatensystem<br />
+<math display="inline"><msub><mi>x</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub></math> .. Vektor Minimalwert<br />
+<math display="inline"><msub><mi>x</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub></math> .. Vektor Maximalwert</p>
+<ul>
+<li>Übernahme einer einspaltigen, aufsteigend geordneten ASCII Datenvektordatei.</li>
+<li>Ausgabe einer zweispaltigen, aufsteigend geordneten ASCII Datenmatrixdatei beinhaltend:</li>
+</ul>
+<pre><code>Den an das Ziel-Koordinatensystem angepassten Datenvektor. 
+Den ursprünglichen Datenvektor. 
+</code></pre>
+<p>Handhabung</p>
+<pre><code>ktf3 [input] [output] [minx] [maxx] [inv]
+[input] ... Eingabe Datei 
+[output] .. Ausgabe Datei 
+[minx] .... Wert des Minimalpunktes im Ziel-Koordinatensystem
+[maxx] .... Wert des Maximalpunktes im Ziel-Koordinatensystem
+[inv] ..... 1: Wertinvertierung 0: Keine Wertinvertierung
+</code></pre>
+<h2 id="ntf">NTF</h2>
+<p>Erzeugt einen aufsteigend geordneten linearen Datenvektor und passt diesen an ein Ziel-Koordinatensystem an.
+Die Datenanpassung erfolgt über</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msubsup><mi>x</mi><mi>i</mi><mo data-mjx-alternate="1">′</mo></msubsup><mo>=</mo><mi>m</mi><mi>i</mi><msub><mi>n</mi><mi>x</mi></msub><mo>+</mo><mrow data-mjx-texclass="OPEN"><mo minsize="2.047em" maxsize="2.047em">{</mo></mrow><mrow data-mjx-texclass="OPEN"><mo minsize="1.2em" maxsize="1.2em">[</mo></mrow><mo stretchy="false">(</mo><mi>m</mi><mi>i</mi><msub><mi>n</mi><mi>x</mi></msub><mo>&minus;</mo><msub><mi>x</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><mo stretchy="false">)</mo><mo>&minus;</mo><mo stretchy="false">(</mo><mi>m</mi><mi>i</mi><msub><mi>n</mi><mi>x</mi></msub><mo>&minus;</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo><mrow data-mjx-texclass="CLOSE"><mo minsize="1.2em" maxsize="1.2em">]</mo></mrow><mo>&middot;</mo><mfrac><mrow><mi>m</mi><mi>a</mi><msub><mi>x</mi><mi>x</mi></msub><mo>&minus;</mo><mi>m</mi><mi>i</mi><msub><mi>n</mi><mi>x</mi></msub></mrow><mrow><mo stretchy="false">(</mo><mi>m</mi><mi>i</mi><msub><mi>n</mi><mi>x</mi></msub><mo>&minus;</mo><msub><mi>x</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><mo stretchy="false">)</mo><mo>&minus;</mo><mo stretchy="false">(</mo><mi>m</mi><mi>i</mi><msub><mi>n</mi><mi>x</mi></msub><mo>&minus;</mo><msub><mi>x</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo stretchy="false">)</mo></mrow></mfrac><mrow data-mjx-texclass="CLOSE"><mo minsize="2.047em" maxsize="2.047em">}</mo></mrow></math></p>
+<p>bei einer Wertinvertierung errechnet man <math display="inline"><msubsup><mi>x</mi><mi>i</mi><mo data-mjx-alternate="1">″</mo></msubsup></math> über</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msubsup><mi>x</mi><mi>i</mi><mo data-mjx-alternate="1">″</mo></msubsup><mo>=</mo><mo stretchy="false">(</mo><mi>m</mi><mi>i</mi><msub><mi>n</mi><mi>x</mi></msub><mo>+</mo><mi>m</mi><mi>a</mi><msub><mi>x</mi><mi>x</mi></msub><mo stretchy="false">)</mo><mo>&minus;</mo><msubsup><mi>x</mi><mi>i</mi><mo data-mjx-alternate="1">′</mo></msubsup><mo>,</mo></math>
+mit</p>
+<p><math display="inline"><mi>m</mi><mi>i</mi><msub><mi>n</mi><mi>x</mi></msub></math> .... Wert des Minimalpunktes im Ziel-Koordinatensystem<br />
+<math display="inline"><mi>m</mi><mi>a</mi><msub><mi>x</mi><mi>x</mi></msub></math> .... Wert des Maximalpunktes im Ziel-Koordinatensystem<br />
+<math display="inline"><msub><mi>x</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub></math> .. Vektor Minimalwert<br />
+<math display="inline"><msub><mi>x</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub></math> .. Vektor Maximalwert</p>
+<ul>
+<li>Ausgabe einer einspaltigen, aufsteigend geordneten linearen ASCII Datenvektordatei.</li>
+</ul>
+<p>Handhabung</p>
+<pre><code>ntf [output] [minn] [maxn] [min] [max] [inv]
+[output] ........................... Ausgabe Datei
+[minn] ............................. n Minimalwert
+[minn] ............................. n Maximalwert
+[min] ........... Koordinaten Minimalpositionswert
+[max] ........... Koordinaten Maximalpositionswert
+[inv] ............ 1:invertiert 0:nicht invertiert
+</code></pre>
+<h2 id="sel">SEL</h2>
+<p>Selegiert einen Datenvektor aus einer Datenmatrix</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>n</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><mn>33000.</mn></math></p>
+<ul>
+<li>Übernahme einer ASCII Datenmatrixdatei.</li>
+<li>Ausgabe einer einspaltigen ASCII Datenvektordatei.</li>
+</ul>
+<p>Handhabung</p>
+<pre><code>sel [input] [output] [a] [k] 
+[input] ... Eingabe Datei 
+[output] .. Ausgabe Datei 
+[a] ....... Vektornummer 
+[k] ....... Vektoranzahl 
+</code></pre>
+<h2 id="srt">SRT</h2>
+<p>Sortiert einen Datenvektor</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>n</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><mn>33000</mn><mo>,</mo></math></p>
+<p>16 stellige Ausgabe.</p>
+<ul>
+<li>Übernahme einer einspaltigen ASCII Datenvektordatei.</li>
+<li>Ausgabe einer sortierten einspaltigen ASCII Datenvektordatei.</li>
+</ul>
+<p>Handhabung</p>
+<pre><code>srt [input] [output] [[d]] 
+[input] ... Eingabe Datei 
+[output] .. Ausgabe Datei 
+[d] ....... optional 1: absteigende Sortierung 
+</code></pre>
+<h2 id="srt1">SRT1</h2>
+<p>Verkettet 2 sortierte Datenvektoren mit
+Filestream Verarbeitung, <math display="inline"><msub><mi>n</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo stretchy="false">→</mo><mi mathvariant="normal">&infin;</mi></math>.</p>
+<ul>
+<li>Übernahme von zwei aufsteigend sortierten einspaltigen ASCII Datenvektordateien.</li>
+<li>Ausgabe einer sortierten einspaltigen ASCII Datenvektordatei.</li>
+</ul>
+<p>Handhabung</p>
+<pre><code>srt1 [input1] [input2] [output] 
+[input1] ... Eingabe Datei 1
+[input2] ... Eingabe Datei 2
+[output] ... Ausgabe Datei 
+</code></pre>
+<h2 id="srt2">SRT2</h2>
+<p>Sortiert einen Datenvektor</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>n</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><mn>33000.</mn></math></p>
+<p>Die Datensortierung erfolgt über iterativen Paarvergleich</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>i</mi><mtext>&nbsp;vs.&nbsp;</mtext><mi>i</mi><mo>+</mo><mn>1</mn></math></p>
+<p>und Paartausch</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>i</mi><mo>&gt;</mo><mi>i</mi><mo>+</mo><mn>1.</mn></math></p>
+<p>(langsamer als <code>SRT.EXE</code>)</p>
+<ul>
+<li>Übernahme einer einspaltigen ASCII Datenvektordatei.</li>
+<li>Ausgabe einer sortierten einspaltigen ASCII Datenvektordatei.</li>
+</ul>
+<p>Handhabung</p>
+<pre><code>srt2 [input] [output] [[d]] 
+[input] ... Eingabe Datei 
+[output] .. Ausgabe Datei 
+[d] ....... optional 1: absteigende Sortierung 
+</code></pre>
+<h2 id="srt3">SRT3</h2>
+<p>Sortiert einen Datenvektor</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>n</mi><mrow data-mjx-texclass="ORD"><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><mn>33000</mn><mo>,</mo></math></p>
+<p>max. 8-Stellen.</p>
+<p>Sehr schnelle Berechnung durch Umsetzung der C-eigenen <code>Qsort</code> Funktion.</p>
+<ul>
+<li>Übernahme einer einspaltigen ASCII Datenvektordatei.</li>
+<li>Ausgabe einer sortierten einspaltigen ASCII Datenvektordatei.</li>
+</ul>
+<p>Handhabung</p>
+<pre><code>srt3 [input] [output] [[d]] 
+[input] ... Eingabe Datei 
+[output] .. Ausgabe Datei 
+[d] ....... optional 1: absteigende Sortierung
+</code></pre>
+<h2 id="v2v">V2V</h2>
+<p>Fügt 2 einspaltige ASCII Dateien aneinander (<math display="inline"><msub><mi>n</mi><mn>1</mn></msub><mo>=</mo><msub><mi>n</mi><mn>2</mn></msub></math> wird vorausgesetzt).</p>
+<ul>
+<li>Übernahme von 2 einspaltigen ASCII Dateien.</li>
+<li>Ausgabe einer zweispaltigen ASCII Datei.</li>
+</ul>
+<p>Handhabung</p>
+<pre><code>V2V [input1] [input2] [output] [tab] 
+[input1] ... Eingabe Datei 1
+[input2] ... Eingabe Datei 2
+[output] ... Ausgabe Datei 
+[tab] ...... Spalten Trennzeichen (0):Tabulator (1):Leerzeichen (*):ein beliebiger String
+</code></pre>
+<h2 id="z2z">Z2Z</h2>
+<p>Fügt zwei ASCII Dateien aneinander.</p>
+<ul>
+<li>Übernahme zweier ASCII Dateien.</li>
+<li>Ausgabe einer ASCII Datei.</li>
+</ul>
+<p>Handhabung</p>
+<pre><code>Z2Z [input1] [input2] [output] 
+[input1] ... Eingabe Datei 1
+[input2] ... Eingabe Datei 2
+[output] ... Ausgabe Datei
+</code></pre>
+<br>
+<h2 id="references">References</h2>
+<p>Gentle, J. E. (2024). <em>Matrix Algebra: Theory, Computations and Applications in Statistics</em>. Springer Texts in Statistics. Springer. <a href="https://doi.org/10.1007/978-3-031-42144-0">https://doi.org/10.1007/978-3-031-42144-0</a></p>
+<p>Karpfinger, C. (2022). Calculating with Matrices. In <em>Calculus and Linear Algebra in Recipes: Terms, Phrases and Numerous Examples in Short Learning Units</em>, 87–100. Berlin, Heidelberg: Springer Berlin Heidelberg. <a href="https://doi.org/10.1007/978-3-662-65458-3_10">https://doi.org/10.1007/978-3-662-65458-3_10</a></p>
+<p>Meyberg, K., &amp; Vachenauer, P. (2001). <em>Höhere Mathematik 1</em>. Springer-Lehrbuch. Springer, Berlin, Heidelberg. <a href="https://doi.org/10.1007/978-3-642-56654-7">https://doi.org/10.1007/978-3-642-56654-7</a></p>
+
+<hr WIDTH="75%">
+<blockquote ALIGN="CENTER">
+<center>
+<a href="https://github.com/Schrausser/ConsoleApp_Matrix">
+ConsoleApp_Matrix
+</a>
+<br><font color="#999999"><font size=-1>
+<a
+href="https://orcid.org/0000-0002-4924-8280">
+Dietmar Gerald Schrausser
+</a>
+<p>23.07.2025</p>
+</font></font>
+</center>
+</blockquote>	
+
+</body>
+</html> 
