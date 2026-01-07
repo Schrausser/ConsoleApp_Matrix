@@ -165,7 +165,7 @@ Spaltentrennzeichen, Ausgabedatei: 1 Leerzeichen.
 Handhabung
 ~~~
 TRP [input] [output] 
-[inpup] .... Eingabe Datei
+[input] .... Eingabe Datei
 [output] ... Ausgabe Datei
 ~~~
 
