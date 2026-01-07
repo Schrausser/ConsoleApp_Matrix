@@ -209,7 +209,7 @@ Multipliziert eine Matrix mit einer reellen Zahl.
 
 Handhabung
 ~~~
-ZMA [matrix] [output] [wert} 
+ZMA [matrix] [output] [wert] 
 [matrix] ... Eingabe Datei
 [output] ... Ausgabe Datei
 [wert] ..... Reelle Zahl
