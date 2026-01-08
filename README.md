@@ -16,10 +16,10 @@ wird vorausgesetzt.
 Handhabung
 ~~~
 AMA [matrix1] [matrix2] [output] [mode] 
-[matrix1] ... Eingabe Datei 1
-[matrix2] ... Eingabe Datei 2
-[output]  ... Ausgabe Datei
-[mode] ...... (0):Addition (1):Subtraktion
+ [matrix1] ... Eingabe Datei 1
+ [matrix2] ... Eingabe Datei 2
+ [output]  ... Ausgabe Datei
+ [mode] ...... (0):Addition (1):Subtraktion
 ~~~
 
 ## IMA
@@ -52,8 +52,8 @@ zur erzeugten Einheitsmatrix $\mathbfit E$, $\mathbfit A^{-1}$ entsteht transpon
 Handhabung
 ~~~
 IMA [matrix] [output] 
-[matrix] ... Eingabe Datei
-[output] ... Ausgabe Datei
+ [matrix] ... Eingabe Datei
+ [output] ... Ausgabe Datei
 ~~~
 ## MMA
 
@@ -86,9 +86,9 @@ $$n=n_1,\text{ }k=k_2:$$
 Handhabung
 ~~~
 MMA [matrix1] [matrix2] [output] 
-[matrix1] ... Eingabe Datei 1
-[matrix2] ... Eingabe Datei 2
-[output]  ... Ausgabe Datei
+ [matrix1] ... Eingabe Datei 1
+ [matrix2] ... Eingabe Datei 2
+ [output]  ... Ausgabe Datei
 ~~~
 
 ## QMA
@@ -105,8 +105,8 @@ Quadriert eine quadratische Matrix:
 Handhabung
 ~~~
 QMA [matrix] [matrix] [output] 
-[matrix] ... Eingabe Datei 
-[output] ... Ausgabe Datei
+ [matrix] ... Eingabe Datei 
+ [output] ... Ausgabe Datei
 ~~~
 
 ## SMA
@@ -119,12 +119,12 @@ Selegiert eine Sub Matrix (oder einen Vektor) aus einer Matrix.
 Handhabung
 ~~~
 SMA [matrix] [output] [i0] [i1] [j0] [j1]
-[matrix] ................. Matrix Datei
-[output] ................. Matrix Ausgabe Datei
-[i0] ..................... von Zeile
-[i1] ..................... bis Zeile
-[j0] ..................... von Spalte
-[j1] ..................... bis Spalte
+ [matrix] ................. Matrix Datei
+ [output] ................. Matrix Ausgabe Datei
+ [i0] ..................... von Zeile
+ [i1] ..................... bis Zeile
+ [j0] ..................... von Spalte
+ [j1] ..................... bis Spalte
 ~~~
 
 ## SPUR
@@ -142,12 +142,12 @@ Berechnet die Spur (*sp*) einer quadratischen Matrix $\mathbfit A$:
 Handhabung
 ~~~
 SPUR [matrix] [mode] 
-[matrix] ... Eingabe Datei
-[mode] ..... Art der Spurberechnung:
-(0): Addition der Diagonalelemente (Standard)
-(1): Multiplikation der Diagonalelemente (siehe Determinante, VMA.exe)
-(2): Subtraktion der Diagonalelemente
-(3): Division der Diagonalelemente
+ [matrix] ... Eingabe Datei
+ [mode] ..... Art der Spurberechnung:
+ (0): Addition der Diagonalelemente (Standard)
+ (1): Multiplikation der Diagonalelemente (siehe Determinante, VMA.exe)
+ (2): Subtraktion der Diagonalelemente
+ (3): Division der Diagonalelemente
 ~~~
 
 ## TRP
@@ -165,8 +165,8 @@ Spaltentrennzeichen, Ausgabedatei: 1 Leerzeichen.
 Handhabung
 ~~~
 TRP [input] [output] 
-[input] .... Eingabe Datei
-[output] ... Ausgabe Datei
+ [input] .... Eingabe Datei
+ [output] ... Ausgabe Datei
 ~~~
 
 ## VMA
@@ -196,8 +196,8 @@ Die Determinante von $\mathbfit A$ (det $\mathbfit A)$ ist das Produkt der Eleme
 Handhabung
 ~~~
 VMA [matrix] [output] 
-[matrix] ... Eingabe Datei
-[output] ... Ausgabe Datei
+ [matrix] ... Eingabe Datei
+ [output] ... Ausgabe Datei
 ~~~
 
 ## ZMA
@@ -210,9 +210,9 @@ Multipliziert eine Matrix mit einer reellen Zahl.
 Handhabung
 ~~~
 ZMA [matrix] [output] [wert] 
-[matrix] ... Eingabe Datei
-[output] ... Ausgabe Datei
-[wert] ..... Reelle Zahl
+ [matrix] ... Eingabe Datei
+ [output] ... Ausgabe Datei
+ [wert] ..... Reelle Zahl
 ~~~
 
 ## ENT
@@ -239,9 +239,9 @@ Führt eine symmetrische entwobene Aufteilung einer Datenvektordatei $\mathbfit 
 Handhabung
 ~~~
 ENT [input] [output1] [output2]
-[input] ..... Eingabe Datei
-[output1] ... Ausgabe Datei 1
-[output2] ... Ausgabe Datei 2 
+ [input] ..... Eingabe Datei
+ [output1] ... Ausgabe Datei 1
+ [output2] ... Ausgabe Datei 2 
 ~~~
 
 ## KTF
@@ -257,9 +257,9 @@ $$x_i[n]= x_i[n-1]⋅\frac{n-2}{n-1} ; n'\gt n.$$
 Handhabung
 ~~~
 ktf [input] [output] [n] 
-[input] ... Eingabe Datei 
-[output] .. Ausgabe Datei 
-[n] ....... Vektorumfang n'
+ [input] ... Eingabe Datei 
+ [output] .. Ausgabe Datei 
+ [n] ....... Vektorumfang n'
 ~~~
 
 ## KTF2
@@ -272,9 +272,9 @@ Verringert oder vergrössert den Umfang eines Datenvektors ($n_{max}= n'_{max}= 
 Handhabung
 ~~~
 ktf2 [input] [output] [n] 
-[input] ... Eingabe Datei 
-[output] .. Ausgabe Datei 
-[n] ....... Vektorumfang n' 
+ [input] ... Eingabe Datei 
+ [output] .. Ausgabe Datei 
+ [n] ....... Vektorumfang n' 
 ~~~
 
 ## KTF3
@@ -303,11 +303,11 @@ Den ursprünglichen Datenvektor.
 Handhabung
 ~~~
 ktf3 [input] [output] [minx] [maxx] [inv]
-[input] ... Eingabe Datei 
-[output] .. Ausgabe Datei 
-[minx] .... Wert des Minimalpunktes im Ziel-Koordinatensystem
-[maxx] .... Wert des Maximalpunktes im Ziel-Koordinatensystem
-[inv] ..... 1: Wertinvertierung 0: Keine Wertinvertierung
+ [input] ... Eingabe Datei 
+ [output] .. Ausgabe Datei 
+ [minx] .... Wert des Minimalpunktes im Ziel-Koordinatensystem
+ [maxx] .... Wert des Maximalpunktes im Ziel-Koordinatensystem
+ [inv] ..... 1: Wertinvertierung 0: Keine Wertinvertierung
 ~~~
 
 ## NTF
@@ -332,12 +332,12 @@ $x_{max}$ .. Vektor Maximalwert
 Handhabung
 ~~~
 ntf [output] [minn] [maxn] [min] [max] [inv]
-[output] ........................... Ausgabe Datei
-[minn] ............................. n Minimalwert
-[minn] ............................. n Maximalwert
-[min] ........... Koordinaten Minimalpositionswert
-[max] ........... Koordinaten Maximalpositionswert
-[inv] ............ 1:invertiert 0:nicht invertiert
+ [output] ........................... Ausgabe Datei
+ [minn] ............................. n Minimalwert
+ [minn] ............................. n Maximalwert
+ [min] ........... Koordinaten Minimalpositionswert
+ [max] ........... Koordinaten Maximalpositionswert
+ [inv] ............ 1:invertiert 0:nicht invertiert
 ~~~
 
 ## SEL
@@ -352,10 +352,10 @@ $$n_{max}= 33000.$$
 Handhabung
 ~~~
 sel [input] [output] [a] [k] 
-[input] ... Eingabe Datei 
-[output] .. Ausgabe Datei 
-[a] ....... Vektornummer 
-[k] ....... Vektoranzahl 
+ [input] ... Eingabe Datei 
+ [output] .. Ausgabe Datei 
+ [a] ....... Vektornummer 
+ [k] ....... Vektoranzahl 
 ~~~
 
 ## SRT
@@ -372,9 +372,9 @@ $$n_{max}= 33000,$$
 Handhabung
 ~~~
 srt [input] [output] [[d]] 
-[input] ... Eingabe Datei 
-[output] .. Ausgabe Datei 
-[d] ....... optional 1: absteigende Sortierung 
+ [input] ... Eingabe Datei 
+ [output] .. Ausgabe Datei 
+ [d] ....... optional 1: absteigende Sortierung 
 ~~~
 
 ## SRT1
@@ -388,9 +388,9 @@ Filestream Verarbeitung, $n_{max} \rightarrow \infty$.
 Handhabung
 ~~~
 srt1 [input1] [input2] [output] 
-[input1] ... Eingabe Datei 1
-[input2] ... Eingabe Datei 2
-[output] ... Ausgabe Datei 
+ [input1] ... Eingabe Datei 1
+ [input2] ... Eingabe Datei 2
+ [output] ... Ausgabe Datei 
 ~~~
 
 ## SRT2
@@ -415,9 +415,9 @@ $$i > i+1.$$
 Handhabung
 ~~~
 srt2 [input] [output] [[d]] 
-[input] ... Eingabe Datei 
-[output] .. Ausgabe Datei 
-[d] ....... optional 1: absteigende Sortierung 
+ [input] ... Eingabe Datei 
+ [output] .. Ausgabe Datei 
+ [d] ....... optional 1: absteigende Sortierung 
 ~~~
 ## SRT3
 
@@ -435,9 +435,9 @@ Sehr schnelle Berechnung durch Umsetzung der C-eigenen `Qsort` Funktion.
 Handhabung
 ~~~
 srt3 [input] [output] [[d]] 
-[input] ... Eingabe Datei 
-[output] .. Ausgabe Datei 
-[d] ....... optional 1: absteigende Sortierung
+ [input] ... Eingabe Datei 
+ [output] .. Ausgabe Datei 
+ [d] ....... optional 1: absteigende Sortierung
 ~~~
 
 ## V2V
@@ -450,10 +450,10 @@ Fügt 2 einspaltige ASCII Dateien aneinander ($n_1=n_2$ wird vorausgesetzt).
 Handhabung
 ~~~
 V2V [input1] [input2] [output] [tab] 
-[input1] ... Eingabe Datei 1
-[input2] ... Eingabe Datei 2
-[output] ... Ausgabe Datei 
-[tab] ...... Spalten Trennzeichen (0):Tabulator (1):Leerzeichen (*):ein beliebiger String
+ [input1] ... Eingabe Datei 1
+ [input2] ... Eingabe Datei 2
+ [output] ... Ausgabe Datei 
+ [tab] ...... Spalten Trennzeichen (0):Tabulator (1):Leerzeichen (*):ein beliebiger String
 ~~~
 
 ## Z2Z
@@ -466,9 +466,9 @@ Fügt zwei ASCII Dateien aneinander.
 Handhabung
 ~~~
 Z2Z [input1] [input2] [output] 
-[input1] ... Eingabe Datei 1
-[input2] ... Eingabe Datei 2
-[output] ... Ausgabe Datei
+ [input1] ... Eingabe Datei 1
+ [input2] ... Eingabe Datei 2
+ [output] ... Ausgabe Datei
 ~~~
 ## References
 
