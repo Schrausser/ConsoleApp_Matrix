@@ -334,7 +334,7 @@ Handhabung
 ntf [output] [minn] [maxn] [min] [max] [inv]
  [output] ........................... Ausgabe Datei
  [minn] ............................. n Minimalwert
- [minn] ............................. n Maximalwert
+ [maxn] ............................. n Maximalwert
  [min] ........... Koordinaten Minimalpositionswert
  [max] ........... Koordinaten Maximalpositionswert
  [inv] ............ 1:invertiert 0:nicht invertiert
