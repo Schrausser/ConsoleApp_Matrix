@@ -104,7 +104,7 @@ Quadriert eine quadratische Matrix:
 
 Handhabung
 ~~~
-QMA [matrix] [matrix] [output] 
+QMA [matrix] [output] 
  [matrix] ... Eingabe Datei 
  [output] ... Ausgabe Datei
 ~~~
