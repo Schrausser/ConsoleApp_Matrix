@@ -48,7 +48,7 @@ void _profil()
 	printf("Usage: NTF [output] [minn] [maxn] [min] [max] [inv]\n");
 	printf(" [output] ........................... Ausgabe Datei\n");
 	printf(" [minn] ............................. n Minimalwert\n");
-	printf(" [minn] ............................. n Maximalwert\n");
+	printf(" [maxn] ............................. n Maximalwert\n");
 	printf(" [min] ........... Koordinaten Minimalpositionswert\n");
 	printf(" [max] ........... Koordinaten Maximalpositionswert\n");
 	printf(" [inv] ............ 1:invertiert 0:nicht invertiert\n");
