@@ -3,11 +3,11 @@ NTF by Dietmar SCHRAUSSER 2009
 Allgemein
 ---------
 NTF.EXE erzeugt einen aufsteigend geordneten linearen Datenvektor und passt diesen an ein Ziel-Koordinatensystem an. 
-Die Datenanpassung erfolgt über
+Die Datenanpassung erfolgt Ã¼ber
 	
  	x'[i] = minx+(((minx-x[min])-(minx-x[i]))*((maxx-minx)/((minx-x[min])-(minx-x[max])))),
 
-bei einer Wertinvertierung errechnet man x''[i] über
+bei einer Wertinvertierung errechnet man x''[i] Ã¼ber
 	
 	x''[i] = (minx+maxx) - x'[i],
 wobei
@@ -28,7 +28,7 @@ Handhabung
 NTF [output] [minn] [maxn] [min] [max] [inv]
 [output] ........................... Ausgabe Datei
 [minn] ............................. n Minimalwert
-[minn] ............................. n Maximalwert
+[maxn] ............................. n Maximalwert
 [min] ........... Koordinaten Minimalpositionswert
 [max] ........... Koordinaten Maximalpositionswert
 [inv] ............ 1:invertiert 0:nicht invertiert
